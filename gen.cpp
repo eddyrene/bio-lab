@@ -34,13 +34,16 @@ string tipo_mutacion = "mutacion simple";
 
 void inicio ()
 {
-	a.push_back("00110");
+
+    string cromosoma;
+	/*a.push_back("00110");
 	a.push_back("10001");
 	a.push_back("11011");
-	a.push_back("11101");
+	a.push_back("11101");*/
     cout<<"\nGenerando Población Inicial \n"<<endl;
         for(int i =0 ;i<tam_pob;i++)
         {
+            cout<<"\n"<<i+1<<')'; cin>>cromosoma; a.push_back(cromosoma);
             float sum =0;
             for (int j=0 ; j < tam ; j++)
             {
@@ -48,7 +51,7 @@ void inicio ()
                     sum+=pow(2,j)*t;
             }
             costos.push_back(sum);
-            cout<<"\n"<<i+1<<')'<<a[i]<<"--"<<costos[i]<<endl;
+            //cout<<"\n"<<i+1<<')'<<a[i]<<"--"<<costos[i]<<endl;
             mypq.push(pair<int,string>(costos[i],a[i]));
         }
 }
@@ -173,17 +176,7 @@ int seleccionpadres()
          }
      }
  }
-void run()
-{
-    cout<<"run: "<<endl;
-    cout<<"Tamaño de la Población: "<< tam_pob<<endl;
-    cout<<"Tamaño de los Cromosomas: "<< tam<<endl;
-    cout<<"Cantidad de Iteraciones: "<< ite<<endl;
-    cout<<"Probabilidad de Cruzamiento: "<< por_cruzamiento<<endl;
-    cout<<"Cruzamiento de un Punto: "<< puntocruz<<endl;
-    cout<<"Probabilidad de Mutación:"<< por_mutacion<<endl;
-    cout<<tipo_mutacion<<endl;
-}
+
 void cruzamiento()
 {
     int padre , madre ;
@@ -212,10 +205,32 @@ void cruzamiento()
     a.push_back(hijos[1]);
 }
 
+/*void run()
+{
+    cout<<"run: "<<endl;
+    cout<<"Tamaño de la Población: "<< tam_pob<<endl;
+    cout<<"Tamaño de los Cromosomas: "<< tam<<endl;
+    cout<<"Cantidad de Iteraciones: "<< ite<<endl;
+    cout<<"Probabilidad de Cruzamiento: "<< por_cruzamiento<<endl;
+    cout<<"Cruzamiento de un Punto: "<< puntocruz<<endl;
+    cout<<"Probabilidad de Mutación:"<< por_mutacion<<endl;
+    cout<<tipo_mutacion<<endl;
+}*/
+
 int main ()
 {
+
+    cout<<"Algoritmos Geneticos \n\n";
+    cout<<"Tamaño de poblacion: "; cin>>tam_pob;
+    cout<<"Tamaño de los Cromosomas: ";cin>>tam;
+    cout<<"Cantidad de Iteraciones: ";cin>> ite;
+    cout<<"Probabilidad de Cruzamiento: ";cin>>por_cruzamiento;
+    cout<<"Cruzamiento de un Punto: ";cin>> puntocruz;
+    cout<<"Probabilidad de Mutación:";cin>> por_mutacion;
+    cout<<tipo_mutacion<<endl;
+
     srand (time(NULL));
-    run();
+    //run();
     inicio();
     for(int i =0 ;i<ite;i++ )
     {
