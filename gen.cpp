@@ -1,8 +1,6 @@
-
-
 /*
 Eddy Rene Caceres Huacarpuma
-Algoritmos Geneticos 
+Algoritmos Geneticos
 
 */
 #include <iostream>
@@ -19,13 +17,20 @@ typedef vector<string> pob;
 
 std::vector<float> costos;
 std::vector<float> vectRuleta;
-pob a; 
+priority_queue<pair <int,string> > mypq;
+
+
+
+pob a;
 int tam = 5;
 int tam_pob=4;
 int puntocruz=3;
 float por_mutacion = 0.05;
 float por_cruzamiento = 0.9;
-priority_queue<pair <int,string> > mypq;
+int ite=3;
+string tipo_mutacion = "mutacion simple";
+
+
 
 void inicio ()
 {
@@ -33,7 +38,7 @@ void inicio ()
 	a.push_back("10001");
 	a.push_back("11011");
 	a.push_back("11101");
-
+    cout<<"\nGenerando Población Inicial \n"<<endl;
         for(int i =0 ;i<tam_pob;i++)
         {
             float sum =0;
@@ -43,7 +48,7 @@ void inicio ()
                     sum+=pow(2,j)*t;
             }
             costos.push_back(sum);
-            cout<<a[i]<<"--"<<costos[i]<<endl;
+            cout<<"\n"<<i+1<<')'<<a[i]<<"--"<<costos[i]<<endl;
             mypq.push(pair<int,string>(costos[i],a[i]));
         }
 }
@@ -85,30 +90,19 @@ void seleccion()
             costos.push_back(sum);
             cout<<"\n"<<i+1<<')'<<a[i]<<" - "<<costos[i]<<endl;
             mypq.push(pair<int,string>(costos[i],a[i]));
-
     }
 }
 void ruleta()
 {
-
     cout<<"\nSelección de Individuos - Método de la Ruleta"<<endl;
     double sum_ruleta= 0;
 
     for (int i =0; i < a.size() ; i++)
-    {
-            sum_ruleta+= costos[i];
-    }
-
+        sum_ruleta+= costos[i];
     for (int i =0; i < a.size() ; i++)
-    {
-            vectRuleta.push_back( (costos[i]*100)/sum_ruleta);
-    }
-
+        vectRuleta.push_back( (costos[i]*100)/sum_ruleta);
     for (int i =0; i < a.size() ; i++)
-    {
-
-            cout<<"\n"<<i+1<<')'<< a[i] <<" - "<<costos[i]<<" - "<<vectRuleta[i]<<endl;
-    }
+        cout<<"\n"<<i+1<<')'<< a[i] <<" - "<<costos[i]<<" - "<<vectRuleta[i]<<endl;
 }
 
 int seleccionpadres()
@@ -176,47 +170,20 @@ int seleccionpadres()
                  h[i][mut_pos]='0';
 
              cout<<"\n"<<h[i]<<endl;
-
          }
-
      }
-
  }
-
- /*
-  var parent1_indx = this.indexRandomParent(), //Seleccionados por la ruleta
-      parent2_indx = this.indexRandomParent();
-  //Verificar que los dos padres no sean iguales
-  while(parent2_indx == parent1_indx)
-    parent2_indx = Math.floor(Math.random() * this.population.length);
-
-  console.log("Padre: " + (parent1_indx + 1));
-  console.log("Madre: " + (parent2_indx + 1));
-
-//   //Imprime padres
-//   console.log(this.population[parent1_indx].genotype);
-//   console.log(this.population[parent2_indx].genotype);
-
-  var child1,
-      child2;
-  if(Math.random() < crossover_prob) {
-    console.log("Cruzamiento");
-    //Cruzamiento de los padres
-    var children = this.population[parent1_indx].crossover(this.population[parent2_indx], crossover_point),
-    child1 = new Cromosoma(this.cr_size, children[0]),
-    child2 = new Cromosoma(this.cr_size, children[1]);
-  }
-  else {
-    console.log("Sin cruzamiento");
-    child1 = new Cromosoma(this.cr_size, this.population[parent1_indx].genotype),
-    child2 = new Cromosoma(this.cr_size, this.population[parent2_indx].genotype);
-  }
-
-  //Insertamos a los hijos a la población
-  this.population.push(child1);
-  this.population.push(child2);
-*/
-
+void run()
+{
+    cout<<"run: "<<endl;
+    cout<<"Tamaño de la Población: "<< tam_pob<<endl;
+    cout<<"Tamaño de los Cromosomas: "<< tam<<endl;
+    cout<<"Cantidad de Iteraciones: "<< ite<<endl;
+    cout<<"Probabilidad de Cruzamiento: "<< por_cruzamiento<<endl;
+    cout<<"Cruzamiento de un Punto: "<< puntocruz<<endl;
+    cout<<"Probabilidad de Mutación:"<< por_mutacion<<endl;
+    cout<<tipo_mutacion<<endl;
+}
 void cruzamiento()
 {
     int padre , madre ;
@@ -245,16 +212,15 @@ void cruzamiento()
     a.push_back(hijos[1]);
 }
 
-
 int main ()
 {
     srand (time(NULL));
-    int ite=30;
+    run();
     inicio();
     for(int i =0 ;i<ite;i++ )
     {
         cout<<"\nIteracion "<< i <<endl;
-	evaluacion();
+        evaluacion();
         ruleta();
         cruzamiento();
         seleccion();
