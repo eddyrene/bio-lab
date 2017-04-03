@@ -8,7 +8,7 @@ Algoritmos Geneticos
 #include <cmath>
 #include <algorithm>
 #include <queue>
-
+#include <map>
 
 
 using namespace std;
@@ -18,54 +18,106 @@ typedef vector<string> pob;
 const float PI = 3.14159;
 std::vector<float> costos;
 std::vector<float> vectRuleta;
+typedef std::vector < vector <int > > matriz;
+int inf = 10000;
+
+
+
 priority_queue<pair <float,string> > mypq;
 
 int part_ent = 2; int part_dec = 5;
 
 pob a;
-int tam = 7;
+int tam = 5;
 int tam_pob=4;
 int puntocruz=3;
 float por_mutacion = 0.05;
 float por_cruzamiento = 0.9;
 int ite=100;
 string tipo_mutacion = "mutacion simple";
+matriz mat;
+
+map <char, int > tabla;
+
 
 
 float fitness(float x){
     return  x * sin(10*PI*x) + 1;
 }
+
+
+
 void inicio2()
 {
-    a.push_back("1111000");
-    a.push_back("1010111");
-    a.push_back("1010111");
-    a.push_back("1010100");
-    float final; 
-    int ent=0;
-    int dec=0;
-    for(int i =0 ;i<tam_pob;i++)
-    {
-        final=0;
-        int e=0; float d=0;
-        for (int j=0 ; j < part_ent ; j++)
-        {
-                int t = a[i][j]-'0';
-                    e+=pow(2,part_ent-j-1)*t;
-        }
-        for (int j=0; j < tam-part_ent; j++)
-        {
 
-                    int t = (a[i][part_ent+ j])-'0';
-                    d+=pow(2,((j+1)*-1))*t;
-                    //cout<<"t :"<<t <<"d : "<<d<<" "<<j<<endl;
-        }
-        //cout<<e<<
-        final = fitness( e+d);
-        costos.push_back(final);
-        cout<<"\n"<<i+1<<')'<<a[i]<<"--"<<costos[i]<<endl;
-        mypq.push(pair<float,string>(costos[i],a[i]));
+    mat.resize(5);
+    for(int i=0;i<5;i++)
+        mat[i].resize(5);
+
+tabla.insert(pair<char,int> ('A',0));
+tabla.insert(pair<char,int> ('B',1));
+tabla.insert(pair<char,int> ('C',2));
+tabla.insert(pair<char,int> ('D',3));
+tabla.insert(pair<char,int> ('E',4));
+
+mat[0][0] = inf;
+mat[0][1] = 2;
+mat[0][2] = 2 ;
+mat[0][3] = 1;
+mat[0][4] = 4;
+
+mat[1][0] = 2;
+mat[1][1] = inf;
+mat[1][2] = 3;
+mat[1][3] = 2;
+mat[1][4] = 3;
+
+mat[2][0] = 2;
+mat[2][1] = 3;
+mat[2][2] = inf;
+mat[2][3] = 2;
+mat[2][4] =2;
+
+mat[3][0] = 1;
+mat[3][1] = 2;
+mat[3][2] = 2;
+mat[3][3] = inf;
+mat[3][4] = 4;
+
+mat[4][0] = 4;
+mat[4][1] = 3;
+mat[4][2] = 2;
+mat[4][3] = 4;
+mat[4][4] = inf;
+
+a.push_back("AAAAA");
+a.push_back("CEDAB");
+a.push_back("DBCAE");
+a.push_back("AECDB");
+
+float final;
+
+for(int i =0 ;i<tam_pob;i++)
+{
+    final=0;
+    for(int j=0 ;j< tam;j++)
+    {
+            if (j==tam-1)
+            {
+                int ff = tabla.find(a[i][j])->second;
+                int ss = tabla.find(a[i][0])->second;
+                final += mat[ff][ss];break;            }
+            else{
+
+                int f = tabla.find(a[i][j])->second;
+                int s = tabla.find(a[i][j+1])->second;
+                final += mat[f][s];
+            }
     }
+    costos.push_back(final*-1);
+    cout<<"\n"<<i+1<<')'<<a[i]<<" =  "<<costos[i]*-1<<endl;
+    mypq.push(pair<float,string>(costos[i]*-1,a[i]));
+}
 }
 
 void clean_queue()
@@ -85,7 +137,7 @@ void evaluacion()
             costos.push_back(mypq.top().first);
             a.push_back(mypq.top().second);
             mypq.pop();
-            cout<<"\n"<<i+1<<')'<<a[i]<<" - "<<costos[i]<<endl;
+            cout<<"\n"<<i+1<<')'<<a[i]<<" = "<<costos[i]*-1<<endl;
             i++;
     }
 }
@@ -116,8 +168,8 @@ void seleccion()
         cout<<"e  : "<<e <<"  d : "<<d<<" "<<endl;
         final = fitness( e+d);
         costos.push_back(final);
-        cout<<"\n"<<i+1<<')'<<a[i]<<" - "<<costos[i]<<endl;
-        mypq.push(pair<float,string>(costos[i],a[i]));
+        cout<<"\n"<<i+1<<')'<<a[i]<<" = "<<costos[i]<<endl;
+        mypq.push(pair<float,string>(costos[i]*-1,a[i]));
     }
 }
 void ruleta()
@@ -130,12 +182,12 @@ void ruleta()
     for (int i =0; i < a.size() ; i++)
         vectRuleta.push_back( (costos[i]*100)/sum_ruleta);
     for (int i =0; i < a.size() ; i++)
-        cout<<"\n"<<i+1<<')'<< a[i] <<" - "<<costos[i]<<" - "<<vectRuleta[i]<<endl;
+        cout<<"\n"<<i+1<<')'<< a[i] <<" = "<<costos[i]*-1<<" - "<<vectRuleta[i]<<endl;
 }
 
 int seleccionpadres()
 {
-  int num = rand()%100;
+  int num = rand()%5;
   //cout<<num<<endl;
   int s =0;
   for (int i =0; i < a.size() ; i++)
@@ -255,7 +307,7 @@ int main ()
     cout<<tipo_mutacion<<endl;*/
 
     srand (time(NULL));
-    run();
+    //run();
     inicio2();
 
 
