@@ -9,11 +9,13 @@ Algoritmos Geneticos
 #include <algorithm>
 #include <queue>
 
+
+
 using namespace std;
 
 
 typedef vector<string> pob;
-
+const float PI = 3.14159;
 std::vector<float> costos;
 std::vector<float> vectRuleta;
 priority_queue<pair <int,string> > mypq;
@@ -27,13 +29,16 @@ int tam_pob=4;
 int puntocruz=3;
 float por_mutacion = 0.05;
 float por_cruzamiento = 0.9;
-int ite=2;
+int ite=100;
 string tipo_mutacion = "mutacion simple";
-    
+
+
+float fitness(float x){
+    return  x * sin(10*PI*x) + 1;
+}
 void inicio2()
 {
-
-    a.push_back("11101000");
+    a.push_back("10101000");
     a.push_back("10101111");
     a.push_back("10101110");
     a.push_back("10101110");
@@ -56,38 +61,11 @@ void inicio2()
                     d+=pow(2,-(j))*t;
                     //cout<<"t :"<<t <<"d : "<<d<<" "<<j<<endl;
         }
-        final = e+d;
-       costos.push_back(final);
+        final = fitness( e+d);
+        costos.push_back(final);
         cout<<"\n"<<i+1<<')'<<a[i]<<"--"<<costos[i]<<endl;
         mypq.push(pair<int,string>(costos[i],a[i]));
     }
-}
-
-void inicio ()
-{
-
-    string cromosoma;
-	/*a.push_back("00110");
-	a.push_back("10001");
-	a.push_back("11011");*/
-
-    
-    
-
-    cout<<"\nGenerando Población Inicial \n"<<endl;
-        for(int i =0 ;i<tam_pob;i++)
-        {
-            cout<<"\n"<<i+1<<')'; cin>>cromosoma; a.push_back(cromosoma);
-            float sum =0;
-            for (int j=0 ; j < tam ; j++)
-            {
-                    int t = a[i][j]-'0';
-                    sum+=pow(2,j)*t;
-            }
-            costos.push_back(sum);
-            //cout<<"\n"<<i+1<<')'<<a[i]<<"--"<<costos[i]<<endl;
-            mypq.push(pair<int,string>(costos[i],a[i]));
-        }
 }
 
 void clean_queue()
@@ -116,17 +94,29 @@ void seleccion()
 {
     cout<< "\nSelección de Siguiente Población"<<endl;
     //clean_queue();
+    float final;
+    int ent=0;
+    int dec=0;
     for(int i =0; i< a.size() ; i++)
     {
-            float sum =0;
-            for (int j=0 ; j < tam ; j++)
-            {
-                    int t = a[i][j]-'0';
-                    sum+=pow(2,j)*t;
-            }
-            costos.push_back(sum);
-            cout<<"\n"<<i+1<<')'<<a[i]<<" - "<<costos[i]<<endl;
-            mypq.push(pair<int,string>(costos[i],a[i]));
+        final=0;
+        int e=0; float d=0;
+        for (int j=0 ; j < part_ent ; j++)
+        {
+                int t = a[i][j]-'0';
+                    e+=pow(2,part_ent-j-1)*t;
+        }
+        for (int j=1; j <= tam-part_ent; j++)
+        {
+
+                    int t = a[i][part_ent+j-1]-'0';
+                    d+=pow(2,-(j))*t;
+                    //cout<<"t :"<<t <<"d : "<<d<<" "<<j<<endl;
+        }
+        final = fitness( e+d);
+        costos.push_back(final);
+        cout<<"\n"<<i+1<<')'<<a[i]<<" - "<<costos[i]<<endl;
+        mypq.push(pair<int,string>(costos[i],a[i]));
     }
 }
 void ruleta()
@@ -264,17 +254,18 @@ int main ()
     cout<<tipo_mutacion<<endl;*/
 
     srand (time(NULL));
-    get_number();
+
+    inicio2();
     //run();
-    //inicio();
-    get_number();
-    /*for(int i =0 ;i<ite;i++ )
+
+
+    for(int i =0 ;i<ite;i++ )
     {
         cout<<"\nIteracion "<< i <<endl;
         evaluacion();
         ruleta();
         cruzamiento();
         seleccion();
-    }*/
+    }
 	return 0;
 }

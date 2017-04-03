@@ -1,3 +1,0 @@
-Algoritmos Geneticos 
-
-Tamaño de poblacion: 
