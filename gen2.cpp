@@ -93,7 +93,8 @@ void evaluacion()
 void seleccion()
 {
     cout<< "\nSelección de Siguiente Población"<<endl;
-    //clean_queue();
+    clean_queue();
+
     float final;
     int ent=0;
     int dec=0;
@@ -124,6 +125,7 @@ void ruleta()
 {
     cout<<"\nSelección de Individuos - Método de la Ruleta"<<endl;
     double sum_ruleta= 0;
+    vectRuleta.clear();
 
     for (int i =0; i < a.size() ; i++)
         sum_ruleta+= costos[i];
