@@ -9,6 +9,7 @@ Algoritmos Geneticos
 #include <algorithm>
 #include <queue>
 #include <map>
+#include <list>
 
 using namespace std;
 
@@ -31,11 +32,11 @@ int part_ent = 2; int part_dec = 5;
 
 pob a;
 int tam = 10;
-int tam_pob=4;
+int tam_pob=15;
 int puntocruz=3;
 float por_mutacion = 0.05;
 float por_cruzamiento = 0.9;
-int ite=3;
+int ite=50;
 string tipo_mutacion = "mutacion simple";
 matriz mat;
 
@@ -181,10 +182,42 @@ mat[9][7] = 24;
 mat[9][8] = 9;
 mat[9][9] = inf;
 
+
 a.push_back("ABCDEFGHIJ");
 a.push_back("CEDABJIHFG");
 a.push_back("DBCAEHFGIJ");
 a.push_back("AECDBJIGHF");
+a.push_back("BAHFJDCEGI");
+a.push_back("AECDBJIGHF");
+a.push_back("AECDBJIGHF");
+a.push_back("BIGACEJHFD");
+a.push_back("AECDBJIGHF");
+a.push_back("ABHCFEIDGJ");
+a.push_back("AECDBJIGHF");
+a.push_back("AECDBJIGHF");
+a.push_back("AECDBJIGHF");
+a.push_back("AECDBJIGHF");
+a.push_back("AECDBJIGHF");
+a.push_back("ACEGFDJHIB");
+
+
+
+/*char mygen[] = {'A','B','c','D','E','F','G','H','I','J'};
+
+  std::cout << "The 3! possible permutations with 3 elements:\n";
+  do {
+      for(int i=0;i<10;i++)
+            cout << mygen[i];
+      cout<<endl;
+  } while ( std::next_permutation(mygen,mygen+10) );*/
+
+  std::string cadena = "ABCDEFGHIJ";
+  do
+  {
+    std::cout << cadena << std::endl;
+  } while ( std::next_permutation( cadena.begin( ), cadena.end( ) ) );
+
+
 
 float final;
 
@@ -325,77 +358,65 @@ int sorting(char c, int p)
 	}
 }
 
-
-
-
 vector<string> cruzamiento_cromosoma_PBX(int p1, int p2 )
 {
   bool flags[tam];
   char hijo1[tam], hijo2[tam];
-  string papa = a[p1] ; string  mama =a[p2] ; 
-
-  queue<char> vectcomp1, vectcomp2;
-  vector<char> vectcomp11, vectcomp22;  
+  list<char> papa, mama;
+  list<char> elem_hijo1, elem_hijo2;
 
     for (int i =0 ;i <tam ;i++ )
         flags[i]=seleccionGen();
 
     for (int i = 0;i <tam ;i++ )
     {
+        papa.push_back(a[p1][i]);
+        mama.push_back(a[p2][i]);
         if(flags[i])
         {
         	//cout<<"i:" <<i <<endl;
         	hijo1[i]= a[p2][i]; 
         	hijo2[i]= a[p1][i];
-        	
-			//se llena los escojidos
-        	cout<<a[p2][i]<<endl; 
-        	vectcomp22.push_back(a[p1][i]);  //hijo2  // los que no tienen que repetirse
-        	vectcomp11.push_back(a[p2][i]);  //hijo1 
+
+                cout<<" "<<a[p2][i]<<endl;
+
+                elem_hijo2.push_back(a[p1][i]);  //hijo2  // los que no tienen que repetirse
+                elem_hijo1.push_back(a[p2][i]);  //hijo1
           }
+
      }
-        	
-    
-       	for(int i =0 ; i<  tam;i++)
-       	{	
-       		if(a[p2][i]!= vectcomp22[i])
-       		{
-       			cout<<"Falta 2: "<<a[p2][i]<<endl;;
-        		ordery.push(a[p2][i]);
-       		}
-        	if(a[p1][i]!= vectcomp11[i])
-        		orderx.push(a[p1][i]); // hijo2	
-        } 
-	
 
-    for(int j=0;j<tam;j++)
-    {
-    	cout<<"false"<<j<<endl;
-		if(flags[j]==false)
-		//cout<<"ingresa :"<<ordery.front()<<endl;
-		hijo2[j]=ordery.front(); ordery.pop(); 		
-	}
+      while(!elem_hijo1.empty())
+      {
+           char t = elem_hijo1.front();
+           papa.remove(t);
+           elem_hijo1.pop_front();
+            char u = elem_hijo2.front();
+           mama.remove(u);
+           elem_hijo2.pop_front();
+      }
 
-	 for(int j=0;j<tam;j++)
-    {
-    	cout<<"false"<<j<<endl;
-		if(flags[j]==false)
-		//cout<<"ingresa :"<<ordery.front()<<endl;
-		hijo1[j]=orderx.front(); orderx.pop(); 		
-	}
+      for(int i =0;i < tam;i++)
+      {
+          if(!flags[i])
+          {
+                hijo1[i]=papa.front();
+                papa.pop_front();
 
-
-	
+                hijo2[i]=mama.front();
+                mama.pop_front();
+          }
+      }
         vector<string> r ;
-        
+
         string c = string(hijo1,10);
         string s = string(hijo2,10);
 
 
         r.push_back(c);
         r.push_back(s);
-    	return r;
-}
+        return r;
+        }
 
 void mutacion2(float prob ,vector<string> & h)
  {
