@@ -35,7 +35,7 @@ int tam_pob=4;
 int puntocruz=3;
 float por_mutacion = 0.05;
 float por_cruzamiento = 0.9;
-int ite=30;
+int ite=3;
 string tipo_mutacion = "mutacion simple";
 matriz mat;
 
@@ -325,49 +325,67 @@ int sorting(char c, int p)
 	}
 }
 
+
+
+
 vector<string> cruzamiento_cromosoma_PBX(int p1, int p2 )
 {
   bool flags[tam];
   char hijo1[tam], hijo2[tam];
+  string papa = a[p1] ; string  mama =a[p2] ; 
 
+  queue<char> vectcomp1, vectcomp2;
+  vector<char> vectcomp11, vectcomp22;  
 
     for (int i =0 ;i <tam ;i++ )
         flags[i]=seleccionGen();
 
     for (int i = 0;i <tam ;i++ )
     {
-
         if(flags[i])
         {
-          //cout<<"fa"<<endl;
-         // int v = sorting(a[p1][i],p2);
-          orderx.push(a[p1][i]);
-         // v = sorting(a[p2][i],p1);
-          ordery.push(a[p2][i]);
-        }
-      else
-      {
-        hijo1[i]=a[p1][i];
-      //  cout<<"f : "<<a[p1][i]<<" "<<hijo1[i]<<endl;
-        hijo2[i]=a[p2][i];
-      }
-    }
+        	//cout<<"i:" <<i <<endl;
+        	hijo1[i]= a[p2][i]; 
+        	hijo2[i]= a[p1][i];
+        	
+			//se llena los escojidos
+        	cout<<a[p2][i]<<endl; 
+        	vectcomp22.push_back(a[p1][i]);  //hijo2  // los que no tienen que repetirse
+        	vectcomp11.push_back(a[p2][i]);  //hijo1 
+          }
+     }
+        	
+    
+       	for(int i =0 ; i<  tam;i++)
+       	{	
+       		if(a[p2][i]!= vectcomp22[i])
+       		{
+       			cout<<"Falta 2: "<<a[p2][i]<<endl;;
+        		ordery.push(a[p2][i]);
+       		}
+        	if(a[p1][i]!= vectcomp11[i])
+        		orderx.push(a[p1][i]); // hijo2	
+        } 
+	
 
-  //cout<< hijo1<< "   $$$ " << hijo2 <<endl; 
     for(int j=0;j<tam;j++)
     {
-      if(flags[j])
-      {
+    	cout<<"false"<<j<<endl;
+		if(flags[j]==false)
+		//cout<<"ingresa :"<<ordery.front()<<endl;
+		hijo2[j]=ordery.front(); ordery.pop(); 		
+	}
 
-        hijo1[j]=ordery.front();
-        cout<<hijo1[j]<<endl;
-        ordery.pop();
-        hijo2[j]=orderx.front();
-        orderx.pop();
-      }
-    }
+	 for(int j=0;j<tam;j++)
+    {
+    	cout<<"false"<<j<<endl;
+		if(flags[j]==false)
+		//cout<<"ingresa :"<<ordery.front()<<endl;
+		hijo1[j]=orderx.front(); orderx.pop(); 		
+	}
 
-      /*for(int i=0 ; i<tam ; i++ )-*/
+
+	
         vector<string> r ;
         
         string c = string(hijo1,10);
@@ -376,60 +394,9 @@ vector<string> cruzamiento_cromosoma_PBX(int p1, int p2 )
 
         r.push_back(c);
         r.push_back(s);
-
-      cout<<c<<" -> "<<s<<endl;
-    return r;
+    	return r;
 }
 
-
-vector<string> cruzamiento_cromosoma_OBX(int p1, int p2 )
-{
-	bool flags[tam];
-	char hijo1[tam], hijo2[tam];
-
-
-    for (int i =0 ;i <tam ;i++ )
-        flags[i]=seleccionGen();
-
-    for (int i = 0;i <tam ;i++ )
-    {
-
-        if(flags[i])
-        {
-        	//cout<<"fa"<<endl;
-        	int v = sorting(a[p1][i],p2);
-        	otroVect1.push(pair<int , char> (-1*v, a[p1][i]));
-        	v = sorting(a[p2][i],p1);
-        	otroVect2.push(pair<int , char> (-1*v, a[p2][i]));
-        }
-    	else
-    	{
-    		hijo1[i]=a[p1][i];
-    	//	cout<<"f : "<<a[p1][i]<<" "<<hijo1[i]<<endl;
-    		hijo2[i]=a[p2][i];
-    	}
-    }
-
-	//cout<< hijo1<< "   $$$ " << hijo2 <<endl;	
-    for(int j=0;j<tam;j++)
-    {
-    	if(flags[j])
-    	{
-    		hijo1[j]=otroVect1.top().second;
-	    	otroVect1.pop();
-	    	hijo2[j]=otroVect2.top().second;
-	    	otroVect2.pop();
-    	}
-    }
-        vector<string> r ;
-        string c(hijo1);
-        string s(hijo2);
-        r.push_back(c);
-        r.push_back(s);
-
-      //cout<<c<<" -> "<<s<<endl;
-    return r;
-}
 void mutacion2(float prob ,vector<string> & h)
  {
     int mut_pos1 =tam-1;
@@ -469,45 +436,13 @@ void cruzamiento_PBX()
       madre =  rand() % tam-padre+ padre;
     }
 
-    cout<<"\nPadre:\n"<< padre+1 << endl;
-    cout<<"\nMadre:\n"<< madre+1 << endl;
+    cout<<"\nPadre:\n"<< padre+1 <<" "<< a[padre]<< endl;
+    cout<<"\nMadre:\n"<< madre+1 <<" "<<a[madre]<< endl;
      vector<string> hijos;
     if(rand()%100 <por_cruzamiento*100)
     {
         cout<<"\nCruzamiento:"<<endl;
         hijos = cruzamiento_cromosoma_PBX(padre, madre);
-        mutacion2(por_mutacion,hijos);
-    }
-    else
-    {
-        cout<<"\nSin cruzamiento:\n"<<endl;
-        hijos.push_back(a[padre]);
-        hijos.push_back(a[madre]);
-        cout<< hijos[0] <<"\n\n"<<hijos[1]<<endl;
-
-    }
-    a.push_back(hijos[0]);
-    a.push_back(hijos[1]);
-}
-
-void cruzamiento_OBX()
-{
-	int padre , madre ;
-    pair<int,int> padres = seleccionpadres();
-    padre = padres.first;
-    madre = padres.second;
-    if (padre== madre)
-    {
-    	madre =  rand() % tam-padre+ padre;
-    }
-
-    cout<<"\nPadre:\n"<< padre+1 << endl;
-    cout<<"\nMadre:\n"<< madre+1 << endl;
-     vector<string> hijos;
-    if(rand()%100 <por_cruzamiento*100)
-    {
-        cout<<"\nCruzamiento:"<<endl;
-        hijos = cruzamiento_cromosoma_OBX(padre, madre);
         mutacion2(por_mutacion,hijos);
     }
     else
