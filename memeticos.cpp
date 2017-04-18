@@ -36,7 +36,7 @@ int tam_pob=15;
 int puntocruz=3;
 float por_mutacion = 0.05;
 float por_cruzamiento = 0.9;
-int ite=50;
+int ite=100;
 string tipo_mutacion = "mutacion simple";
 matriz mat;
 
@@ -186,18 +186,18 @@ mat[9][9] = inf;
 a.push_back("ABCDEFGHIJ");
 a.push_back("CEDABJIHFG");
 a.push_back("DBCAEHFGIJ");
-a.push_back("AECDBJIGHF");
+a.push_back("CAIEJHDGBF");
 a.push_back("BAHFJDCEGI");
-a.push_back("AECDBJIGHF");
-a.push_back("AECDBJIGHF");
+a.push_back("GDHJFBACIE");
+a.push_back("FAIJHECGBD");
 a.push_back("BIGACEJHFD");
 a.push_back("AECDBJIGHF");
 a.push_back("ABHCFEIDGJ");
-a.push_back("AECDBJIGHF");
-a.push_back("AECDBJIGHF");
-a.push_back("AECDBJIGHF");
-a.push_back("AECDBJIGHF");
-a.push_back("AECDBJIGHF");
+a.push_back("EDAJFGHCIB");
+a.push_back("FAIJCEDBGH");
+a.push_back("GDHJFBACIE");
+a.push_back("BJAFICGHDE");
+a.push_back("DAJFHGBCIE");
 a.push_back("ACEGFDJHIB");
 
 
@@ -211,11 +211,11 @@ a.push_back("ACEGFDJHIB");
       cout<<endl;
   } while ( std::next_permutation(mygen,mygen+10) );*/
 
-  std::string cadena = "ABCDEFGHIJ";
+ /* std::string cadena = "ABCDEFGHIJ";
   do
   {
     std::cout << cadena << std::endl;
-  } while ( std::next_permutation( cadena.begin( ), cadena.end( ) ) );
+  } while ( std::next_permutation( cadena.begin( ), cadena.end( ) ) );*/
 
 
 
@@ -338,8 +338,28 @@ pair<int,int> seleccionpadres()
   }
   return pp;
 }
+float valorcito(string g)
+{
+	float final=0;
 
+	    for(int j=0 ;j< tam;j++)
+	    {
+	            if (j==tam-1)
+	            {
+	                int ff = tabla.find(g[j])->second;
+	                int ss = tabla.find(g[0])->second;
+	                final += mat[ff][ss];break;            }
+	            else{
 
+	                int f = tabla.find(g[j])->second;
+	                int s = tabla.find(g[j+1])->second;
+	                final += mat[f][s];
+	            }
+	        
+	    }
+	    //cout<<final;	
+	return final;
+}
 bool seleccionGen()
 {
 	int num = rand()%10;
@@ -383,9 +403,7 @@ vector<string> cruzamiento_cromosoma_PBX(int p1, int p2 )
                 elem_hijo2.push_back(a[p1][i]);  //hijo2  // los que no tienen que repetirse
                 elem_hijo1.push_back(a[p2][i]);  //hijo1
           }
-
      }
-
       while(!elem_hijo1.empty())
       {
            char t = elem_hijo1.front();
@@ -418,6 +436,60 @@ vector<string> cruzamiento_cromosoma_PBX(int p1, int p2 )
         return r;
         }
 
+
+
+ bool comp_string(string c , string d)
+ {
+ 	for(int i =0 ;i<c.size();i++ )
+ 		if (c[i]!=d[i])
+ 			return false;
+ 		return true;
+ }
+
+
+
+pair<float, string> permutacion(string c , int h  )
+{
+	priority_queue<pair <float,string> > fit;
+
+	int i =0;
+	while ( i<h )
+	{
+		int first = rand() % tam;
+		int second = rand() % tam;
+		char tmp = c[first];
+		c[first] = c[second];
+		c[second] = tmp;
+
+		int final=valorcito(c);
+		fit.push(pair<float,string> (final*(-1), c ));
+		i++;
+		cout<<"hijo-p"<<final*(-1)<<" "<<c<<endl; 
+	}
+	cout<<"\n mejor: "<<fit.top().first * -1<<" "<< fit.top().second<< endl;
+	return fit.top();
+
+}
+ string busqueda_escalada(string cadena)
+{
+	pair<float,string> nuevo ;
+	string antigua = " ";
+	while(comp_string(cadena, antigua)==false)
+	{
+		antigua = cadena;	
+		//string nuevo= "";
+		nuevo = permutacion(cadena, 5);
+		//cout<<"este :"<<nuevo.first <<endl;
+		if( (nuevo.first)*(-1) < valorcito(cadena))
+		{
+			cadena=nuevo.second;
+				//cout<<"dffffff : "<<cadena<<endl;	
+		}
+
+	}
+	//cout<<"return: "<<nuevo<<endl;
+	return antigua;
+}
 void mutacion2(float prob ,vector<string> & h)
  {
     int mut_pos1 =tam-1;
@@ -441,10 +513,15 @@ void mutacion2(float prob ,vector<string> & h)
              h[i][mut_pos2]=tmp;
 
              cout<<"\nMuto: "<< i+1<<endl;
-             cout<<"\n"<<h[i]<<endl;
+             cout<<"\n"<<h[i]<<" "<<valorcito(h[i]) <<endl;
+             cout<<"\nBusqueda por escalada: "<<endl;
+             string c=busqueda_escalada(h[i]);	
+             //string
+             cout<<"\n"<<c<<endl;
          }
      }
  }
+
 
 void cruzamiento_PBX()
 {
@@ -513,5 +590,7 @@ int main ()
         cruzamiento_PBX();
         seleccion();
     }
+
+   	 //cout<<"valor :"<<valorcito("ABCDEFGHIJ");
 	return 0;
 }
