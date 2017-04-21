@@ -9,6 +9,7 @@ Algoritmos Geneticos
 #include <algorithm>
 #include <queue>
 #include <list>
+#include <ctime>
 
 
 using namespace std;
@@ -43,8 +44,12 @@ pair_ff funcion_objetivo(float x, float y )
 
 bool domina(pair_ff a, pair_ff b)
 {
+	//cout<<"\n comparando:"<<a.first<<" con "<<b.first <<"  y  "<<a.second <<" con "<< b.second<<endl;
 	if(a.first < b.first || a.second < b.second )
+	{
+		//cout << "se cumple"<<endl;
 		return true;
+	}
 	return false;
 }
 
@@ -54,31 +59,48 @@ void inicio2()
     poblacion.push_back(pair_ff(4.24,2.3));
     poblacion.push_back(pair_ff(3.24,0.3));*/
 
+    costos.clear();
+    lista.clear();
+    poblacion.clear();
+	srand (static_cast <unsigned> (time(0)));
 	for( int i=0 ;i< size_pob ;i++ )
 	{
-		float xmin = 0.0; float xmax = 5.0 ; float ymin = 0.0; float ymax= 3.0;
-		float r1 = xmin + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(xmax-xmin)));
-		float r2 = ymin + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(ymax-ymin)));
-		poblacion.push_back(pair_ff(r1,r2));
+		bool req = false;
+		float r1,r2;
+		while(!req)
+		{
+			float xmin = 0.0; float xmax = 5.0 ; float ymin = 0.0; float ymax= 3.0;
+			r1 = xmin + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(xmax-xmin)));
+			r2 = ymin + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(ymax-ymin)));
+			cout<<"r1"<<r1<<"r2"<<r2<<endl;
+			if(((pow((r1-5),2)+ r2*r2 - 25) <= 0) && ((-1*pow((r1-8),2)-pow((r2+3),2) + 7.7))<=0) 
+					req = true;	
+		}
+		poblacion.push_back(pair_ff(r1,r2));	
 	}
     pair_ff result; 
  	for(auto p: poblacion)
  	{
- 		 result = funcion_objetivo(p.first, p.second); 
+ 		result = funcion_objetivo(p.first, p.second); 
+ 		costos.push_back(result);
  	}   
-    costos.push_back(result);
+    
     int i =0;
     int j= 0;
-    bool flag = false;
-	
-	for(i =j ; i<size_pob ; i++)
+	bool flag=false; 
+	for(i =0; i<size_pob ; i++)
 	{
-		for(j ; j< size_pob; j++)
+		for(j=i;j< size_pob; j++)
 		{
-			if(domina(poblacion[i], poblacion[j]));
-				flag=true;
+			flag= false;
+			if(i!=j)
+			{
+				if(domina(costos[i], costos[j]))
+					flag=true;
+				//cout<<"flag: "<<flag<<endl;
+			}
 		}
-	lista.push_back(pair_b_ff(flag,pair_ff(costos[i])))	;	
+	lista.push_back(pair_b_ff(flag,pair_ff(costos[i])));	
 	cout<<"\n"<<i+1<<')'<<" ("<<poblacion[i].first<<","<<poblacion[i].second<<')'<<": ("<<costos[i].first<<','<<costos[i].second<<") -> "<<flag<<endl;	   
 	}
 }
@@ -294,7 +316,6 @@ int main ()
     cout<<"Probabilidad de Mutación:";cin>> por_mutacion;
     cout<<tipo_mutacion<<endl;*/
 
-    srand (time(NULL));
     /*run();
     inicio2();
 
