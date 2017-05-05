@@ -144,7 +144,7 @@ void mutacion(float prob ,vector<string> h)
          {
              cout<<"\nMuto: "<< i+1<<endl;
              if (h[i][mut_pos]=='x')
-                 h[i][mut_pos]=rand()% 1+5 +'0';
+                 h[i][mut_pos]=rand()% 5 +'0';
              else
              {
                if(h[i][mut_pos]== '+' || h[i][mut_pos]== '-' || h[i][mut_pos]== '*' || h[i][mut_pos]== '/' )
@@ -256,7 +256,7 @@ void inicio()
             if(p<5)
                cade[i]= 'x';
             else
-               cade[i]=rand()% 1 + (5)+'0';
+               cade[i]=rand()% 5 +'0';
          }
          p =rand()%10;
          if(i==6)
@@ -264,7 +264,7 @@ void inicio()
             if(p<5)
                cade[i]= 'x';
             else
-               cade[i]=rand()% 1 + (5)+'0';  
+               cade[i]=rand()% 5+'0';  
          }
          p =rand()%10;
          if(i==13)   
@@ -272,7 +272,7 @@ void inicio()
             if(p<5)
                cade[i]= 'x';
             else
-               cade[i]=rand()% 1 + (5)+'0'; 
+               cade[i]=rand()% 5+'0'; 
          }
          p =rand()%10;
          if(i==17)
@@ -280,7 +280,7 @@ void inicio()
             if(p<5)
                cade[i]= 'x';
             else
-               cade[i]=rand()% 1 + (5)+'0'; 
+               cade[i]=rand()% 5+'0'; 
          }
          if (i==4)
          {
