@@ -22,8 +22,8 @@ typedef struct {
 	int n=0;
 }ind;
 
-vector<vector <ind > > fronter;
-vector<vector <ind > > sols;
+vector<vector <int > > fronter;
+vector<list <int > > sols;
 	
 class poblacion
 {
@@ -42,8 +42,10 @@ class poblacion
 		}
 		void inicio()
 		{
-			//pob.resize(size_pob);
-			srand (static_cast <unsigned> (time(0)));
+
+			    
+
+			/*srand (static_cast <unsigned> (time(0)));
 			for( int i=0 ;i< size_pob ;i++ )
 			{
 				bool req = false;
@@ -62,7 +64,16 @@ class poblacion
 				pob.push_back(a);
 				ind ind_= 	pob[i];
 				//cout<<"a.vall: "<< ind_.val.first<<endl;
-			}
+			}*/
+
+			ind e ,f,g,h,i;
+			e.val = pair_ff(1,1);
+			f.val = pair_ff(5,1);
+			g.val = pair_ff(1,8);
+			h.val = pair_ff(4,6);
+			i.val = pair_ff(7,5);
+			pob.push_back(e);pob.push_back(f);pob.push_back(g);pob.push_back(h);pob.push_back(i);
+
 		}
 		void print_poblaccion()
 		{
@@ -82,7 +93,7 @@ class poblacion
 
 		void fast_non_dominated_sort()
 		{
-			//fronter.resize(20);
+			fronter.resize(1);
 			sols.resize(size_pob);
 			//cout<<"size_pob  "<<size_pob<<endl;	
 			//print_poblaccion();
@@ -97,7 +108,8 @@ class poblacion
 						if(domina(pob[i].val,pob[j].val))
 						{
 							//cout<<"d****************: "<<pob[i].n<<endl;
-							sols[i].push_back(pob[j]);
+							sols[i].push_back(j);
+							cout<<"dominancia:"<<i<<" "<<j<<endl;
 						}
 						else
 						{
@@ -106,49 +118,78 @@ class poblacion
 					}
 				}	
 				
+			//	cout<<"imprimiendo niveles"<<endl;
+
 				if(pob[i].n==0)
 				{
-					//pob[i].n=0;
-					
-					c.push_back(pob[i]); 	
-					//cout<<"ce"<<endl;	
+					pob[i].rank=1;
+					fronter[0].push_back(i);
 				}
-				cout<<i<<" :"<< pob[i].n<<endl;
+				cout<<i<<" :"<< pob[i].n<<" "<<endl;
 			}
-			fronter.push_back(c);
+		//	cout<<endl;
 			int g=0;
-			cout<<"f: "<<fronter.size()<<endl;	
+			cout<<"tiene que ser uno: "<<fronter.size()<<endl;	
+			cout<<"Esta 3 : "<<fronter[0].size()<<endl;	
+			for(auto i : fronter[g])
+				cout<<"t: "<<i<<endl;
 
-			while(g<fronter.size())
+
+			for(auto a : sols[2])
+				cout<<"soles: "<<a<<endl;
+
+			while(fronter[g].size()<5000)
 			{
+				cout<<"tamaño del array:******************************"<<fronter[g].size()<<endl;
 				cout<<"entra"<<endl;
-				vector<ind> Q;
-				for(int i=0;i<fronter.size();i++)
+				vector<int> Q;
+				bool flag=false;
+				for(auto i : fronter[g])
 				{
+					cout<<"p en fi  "<<i<<endl;
+					
 					for( auto q :sols[i])
 					{
-						//q.n--;
-						cout<<"fawfe"<<q.n<<endl;
-						if(q.n==0)
+						cout<<"index "<<q<<endl;
+
+						pob[q].n--;
+						cout<<"peso"<<pob[q].n<<endl;
+						if(pob[q].n==0)
 						{
+							flag=true;
 							cout<<"tr"<<endl;
-							q.rank++;
+							pob[q].rank=i+1;
 							Q.push_back(q);
 						}	
 					}
 				}
 				g++;
-				cout<<"hasta aqui"<<endl;
-				fronter.push_back(Q);
+				cout<<"g: "<<g<<endl;
+				if(flag)
+					fronter.push_back(Q);
 				//fronter[g]=Q;
 			}
 
-
-
-
-
+			//cout<<"________________"<<fronter.size()<<endl;
 		}
 
+
+		void print_front()
+		{
+		//	cout<<"imprimiendo frontera"<<endl;
+		//	cout<<"________________"<<fronter.size()<<endl;
+
+
+			for( int i=0 ;i<fronter.size();i++ )
+			{
+						//	cout<<"________________*********************************"<<fronter[i].size()<<endl;
+				for(int j=0; j< fronter[i].size();j++ )
+				{
+					cout<<fronter[i][j]<<" ";
+				}
+				cout<<endl;
+			}
+		}
 /*
 		void eval_dist()
 		{
@@ -163,7 +204,7 @@ int main()
 	p.inicio();
 	p.print_poblaccion();
 	p.fast_non_dominated_sort();
-
+ 	p.print_front();
 	/*vector<int> a;
 	vector<int> b;
 	a.push_back(2);
