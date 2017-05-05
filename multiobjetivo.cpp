@@ -11,7 +11,6 @@ Algoritmos Geneticos
 #include <list>
 #include <ctime>
 
-
 using namespace std;
 
 const float PI = 3.14159;
@@ -23,6 +22,7 @@ std::vector<pair_ff> costos;
 list<pair <bool, pair_ff> > lista;
 
 std::vector<float> vectRuleta;
+vector<pair_ff> vectTorneo;
 
 pob poblacion;
 int size_crom = 7;
@@ -32,6 +32,21 @@ float por_mutacion = 0.05;
 float por_cruzamiento = 0.9;
 int ite=100;
 string tipo_mutacion = "mutacion simple";
+
+
+typedef struct {
+{ 
+	pair_ff val;
+	int rank;
+	float dist;
+}individuo;
+
+
+class poblacion
+{
+
+}
+
 
 
 pair_ff funcion_objetivo(float x, float y )
@@ -52,7 +67,31 @@ bool domina(pair_ff a, pair_ff b)
 	}
 	return false;
 }
+/*void ruleta()
+{
+    cout<<"\nSelección de Individuos - Método de la Ruleta"<<endl;
+    double sum_ruleta= 0;
+    vectRuleta.clear();
 
+    for (int i =0; i < poblacion.size() ; i++)
+        sum_ruleta+= costos[i];
+    for (int i =0; i < poblacion.size() ; i++)
+        vectRuleta.push_back( (costos[i]*100)/sum_ruleta);
+    for (int i =0; i < poblacion.size() ; i++)
+    	cout<<"ruleta"<<endl;
+        //cout<<"\n"<<i+1<<')'<< [i] <<" - "<<costos[i]<<" - "<<vectRuleta[i]<<endl;
+}
+*/
+void torneo()
+{
+	cout<<"\nSelección de Individuos - Método de Torneo"<<endl;
+	vectTorneo.clear();
+	int elegidos = size_pob/2;
+	for(int i =0 ;i< elegidos ; i++ )
+	{
+		vectTorneo.push_back(poblacion[rand() % size_crom]);
+	}
+}
 void inicio2()
 {
     /*poblacion.push_back(pair_ff(2.24,1.3));
