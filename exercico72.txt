@@ -1,0 +1,5680 @@
+pasa esto
+Nueva Población
+( 3 - x) / ( 0 - x ) inf
+( x / x) - ( 3 / 4 ) -nan
+( x * 0) * ( x / x ) -nan
+( 3 - x) / ( 3 - x ) 0.385
+( 4 - 2) / ( 4 + x ) 0.100148
+( x - x) * ( x * 1 ) 0.285
+( x + x) + ( 2 * 1 ) 6.085
+( 3 / 3) / ( 1 / 3 ) 6.585
+( 2 - x) * ( x - 4 ) 37.8133
+( 2 / 0) - ( x - 1 ) inf
+( 1 + x) * ( 3 * 1 ) 15.54
+( 3 - 4) + ( x * x ) 1.36333
+( x - x) * ( x / x ) -nan
+( x - 3) * ( 1 - 4 ) 53.16
+( 1 - 1) / ( 1 + 0 ) 0.285
+pasa esto
+
+Iteracion 0
+
+Selección de Siguiente Población
+( 3 - x) / ( 0 - x ) inf
+( x / x) - ( 3 / 4 ) -nan
+( x * 0) * ( x / x ) -nan
+( 3 - x) / ( 3 - x ) 0.385
+( 4 - 2) / ( 4 + x ) 0.100148
+( x - x) * ( x * 1 ) 0.285
+( x + x) + ( 2 * 1 ) 6.085
+( 3 / 3) / ( 1 / 3 ) 6.585
+( 2 - x) * ( x - 4 ) 37.8133
+( 2 / 0) - ( x - 1 ) inf
+( 1 + x) * ( 3 * 1 ) 15.54
+( 3 - 4) + ( x * x ) 1.36333
+( x - x) * ( x / x ) -nan
+( x - 3) * ( 1 - 4 ) 53.16
+( 1 - 1) / ( 1 + 0 ) 0.285
+
+Selección de Individuos - Método de la Ruleta
+
+1)( 3 - x) / ( 0 - x ) - inf - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x * 0) * ( x / x ) - -nan - -nan
+
+4)( 3 - x) / ( 3 - x ) - 0.385 - -nan
+
+5)( 4 - 2) / ( 4 + x ) - 0.100148 - -nan
+
+6)( x - x) * ( x * 1 ) - 0.285 - -nan
+
+7)( x + x) + ( 2 * 1 ) - 6.085 - -nan
+
+8)( 3 / 3) / ( 1 / 3 ) - 6.585 - -nan
+
+9)( 2 - x) * ( x - 4 ) - 37.8133 - -nan
+
+10)( 2 / 0) - ( x - 1 ) - inf - -nan
+
+11)( 1 + x) * ( 3 * 1 ) - 15.54 - -nan
+
+12)( 3 - 4) + ( x * x ) - 1.36333 - -nan
+
+13)( x - x) * ( x / x ) - -nan - -nan
+
+14)( x - 3) * ( 1 - 4 ) - 53.16 - -nan
+
+15)( 1 - 1) / ( 1 + 0 ) - 0.285 - -nan
+
+Padre:
+15
+
+Madre:
+15
+
+Cruzamiento:
+
+( 1 - 1) / ( 1 + 0 )
+
+Muto: 2
+
+( 1 - 1) / ( 1 + 0 )
+Nueva Población
+( 3 - x) / ( 0 - x ) inf
+( x / x) - ( 3 / 4 ) -nan
+( x * 0) * ( x / x ) -nan
+( 3 - x) / ( 3 - x ) 0.385
+( 4 - 2) / ( 4 + x ) 0.100148
+( x - x) * ( x * 1 ) 0.285
+( x + x) + ( 2 * 1 ) 6.085
+( 3 / 3) / ( 1 / 3 ) 6.585
+( 2 - x) * ( x - 4 ) 37.8133
+( 2 / 0) - ( x - 1 ) inf
+( 1 + x) * ( 3 * 1 ) 15.54
+( 3 - 4) + ( x * x ) 1.36333
+( x - x) * ( x / x ) -nan
+( x - 3) * ( 1 - 4 ) 53.16
+( 1 - 1) / ( 1 + 0 ) 0.285
+( 1 - 1) / ( 1 + 0 ) inf
+( 1 - 1) / ( 1 + 0 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x - x) * ( x / x ) = -nan
+
+4)( x - x) * ( x / x ) = -nan
+
+5)( x - x) * ( x * 1 ) = 0.285
+
+Iteracion 1
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x - x) * ( x / x ) -nan
+( x - x) * ( x / x ) -nan
+( x - x) * ( x * 1 ) 0.285
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x - x) * ( x / x ) - -nan - -nan
+
+4)( x - x) * ( x / x ) - -nan - -nan
+
+5)( x - x) * ( x * 1 ) - 0.285 - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x - x) * ( x * 1 )
+
+( x - x) * ( x * 1 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x - x) * ( x / x ) -nan
+( x - x) * ( x / x ) -nan
+( x - x) * ( x * 1 ) 0.285
+( x - x) * ( x * 1 ) -nan
+( x - x) * ( x * 1 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x - x) * ( x / x ) = -nan
+
+Iteracion 2
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x - x) * ( x / x ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x - x) * ( x / x ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x - x) * ( x / x )
+
+Muto: 2
+
+( x - x) * ( x / x )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x - x) * ( x / x ) -nan
+( x - x) * ( x / x ) -nan
+( x - x) * ( x / x ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 3
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 4
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 5
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 6
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 7
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 8
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 9
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 10
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 11
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 12
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 13
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 14
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 15
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 16
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 17
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 18
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 19
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 20
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 21
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 22
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 23
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 24
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 25
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 26
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 27
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 28
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 29
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 30
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 31
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 32
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 33
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 34
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 35
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 36
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 37
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 38
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 39
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 40
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 41
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 42
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 43
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 44
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 45
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 46
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 47
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 48
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 49
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 50
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 51
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 52
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 53
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 54
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 55
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 56
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 57
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 58
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 59
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 60
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 61
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 62
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 63
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 64
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 65
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 66
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 67
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 68
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 69
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 70
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 71
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 72
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 73
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 74
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 75
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 76
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 77
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 78
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 79
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 80
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 81
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 82
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 83
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 84
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Sin cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 85
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 86
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 87
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 88
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 89
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 90
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 91
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 92
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 93
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 94
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 95
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 96
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 97
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 98
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan
+
+Iteracion 99
+
+Selección de Siguiente Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Selección de Individuos - Método de la Ruleta
+
+1)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+2)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+3)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+4)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+5)( x / x) - ( 3 / 4 ) - -nan - -nan
+
+Padre:
+5
+
+Madre:
+5
+
+Cruzamiento:
+
+Muto: 1
+
+( x / x) - ( 3 / 4 )
+
+Muto: 2
+
+( x / x) - ( 3 / 4 )
+Nueva Población
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+( x / x) - ( 3 / 4 ) -nan
+
+Evaluando Individuos 
+
+1)( x / x) - ( 3 / 4 ) = -nan
+
+2)( x / x) - ( 3 / 4 ) = -nan
+
+3)( x / x) - ( 3 / 4 ) = -nan
+
+4)( x / x) - ( 3 / 4 ) = -nan
+
+5)( x / x) - ( 3 / 4 ) = -nan

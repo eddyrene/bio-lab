@@ -25,7 +25,7 @@
 #include <algorithm>
 #include <queue>
 #include <list>
-#include <ctime>
+#include <ctime>	
 
 using namespace std;
 
@@ -64,13 +64,24 @@ double fitness(string formula)
    parser_t parser;
    parser.compile(expression_string,expression);
 
-   x= 10;
+   //x= 10;
    double y ; 
    actual.clear();
    for (int i = 0 ; i< entrada.size(); i++)
    {
       x= entrada[i];
-      actual.push_back(expression.value());   
+     // cout<<"x:"<<x<<endl;
+      double s;
+      if(isfinite(expression.value()))
+      {
+      	 s= expression.value();
+      	 //cout<<"no cero"<<s<<endl;
+      }
+      else
+      	 s=999999; 
+      actual.push_back(s); 
+
+    //  cout<<"valor_ "<<s<<endl;  
    }
    
    //Calculado el error 
@@ -249,7 +260,7 @@ void inicio()
       for(int i=0;i<size_crom;i++)
       {
         // cout<<"#4"<<endl;
-         cout<<i<<endl;
+         //cout<<i<<endl;
          int p =rand()%10;
          if(i==2)
          { 
@@ -339,7 +350,7 @@ int main()
    cout<<"pasa esto"<<endl;
    inicio();
    cout<<"pasa esto"<<endl;
-   for(int i =0 ;i<10;i++ )
+   for(int i =0 ;i<100;i++ )
     {
         cout<<"\nIteracion "<< i <<endl;
         mostrando();
