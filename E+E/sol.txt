@@ -1,0 +1,1304 @@
+algoritmo de 1+1 , Seccion extintiva
+
+ Individuo inicial
+0.745963 0.463708 dis1  -0.616
+desviacion0.3
+dis2  -0.311
+
+ 
+ Individuo Generado
+0.434963 0.152708 
+ 
+ fitOriginal : 0.924863
+
+ fitGenerado : 0.452387
+
+ Vencedor: Padre 
+0.745963 0.463708 dis1  -0.246
+desviacion0.3
+dis2  -0.571
+
+ 
+ Individuo Generado
+0.174963 -0.107292 
+ 
+ fitOriginal : 0.924863
+
+ fitGenerado : 2.58245
+ 
+ Vencedor: Hijo 
+0.174963 -0.107292 dis1  0.161
+desviacion0.3
+dis2  -0.248
+
+ 
+ Individuo Generado
+-0.0730366 -0.355292 
+ 
+ fitOriginal : 2.58245
+
+ fitGenerado : 14.1566
+ 
+ Vencedor: Hijo 
+-0.0730366 -0.355292 dis1  0.393
+desviacion0.3
+dis2  0.064
+
+ 
+ Individuo Generado
+-0.00903657 -0.291292 
+ 
+ fitOriginal : 14.1566
+
+ fitGenerado : 9.50804
+
+ Vencedor: Padre 
+-0.0730366 -0.355292 dis1  -0.172
+desviacion0.3
+dis2  0.14
+
+ 
+ Individuo Generado
+0.0669634 -0.215292 
+ 
+ fitOriginal : 14.1566
+
+ fitGenerado : 5.70073
+
+ Vencedor: Padre 
+-0.0730366 -0.355292 dis1  0.179
+desviacion0.3
+dis2  0.403
+
+ 
+ Individuo Generado
+0.329963 0.0477075 
+ 
+ fitOriginal : 14.1566
+
+ fitGenerado : 0.823105
+
+ Vencedor: Padre 
+-0.0730366 -0.355292 dis1  0.192
+desviacion0.3
+dis2  -0.008
+
+ 
+ Individuo Generado
+-0.0810366 -0.363292 
+ 
+ fitOriginal : 14.1566
+
+ fitGenerado : 14.8482
+ 
+ Vencedor: Hijo 
+-0.0810366 -0.363292 dis1  0.131
+desviacion0.3
+dis2  0.386
+
+ 
+ Individuo Generado
+0.304963 0.0227075 
+ 
+ fitOriginal : 14.8482
+
+ fitGenerado : 0.977217
+
+ Vencedor: Padre 
+-0.0810366 -0.363292 dis1  0.616
+desviacion0.3
+dis2  -0.298
+
+ 
+ Individuo Generado
+-0.379037 -0.661292 
+ 
+ fitOriginal : 14.8482
+
+ fitGenerado : 66.698
+ 
+ Vencedor: Hijo 
+-0.379037 -0.661292 dis1  0.185
+desviacion0.3
+dis2  -0.061
+
+ 
+ Individuo Generado
+-0.440037 -0.722292 
+ 
+ fitOriginal : 66.698
+
+ fitGenerado : 85.9655
+ 
+ Vencedor: Hijo 
+-0.440037 -0.722292 dis1  0.11
+desviacion0.367197
+dis2  -0.066
+
+ 
+ Individuo Generado
+-0.506037 -0.788292 
+ 
+ fitOriginal : 85.9655
+
+ fitGenerado : 111.338
+ 
+ Vencedor: Hijo 
+-0.506037 -0.788292 dis1  0.094
+desviacion0.367197
+dis2  -0.002
+
+ 
+ Individuo Generado
+-0.508037 -0.790292 
+ 
+ fitOriginal : 111.338
+
+ fitGenerado : 112.187
+ 
+ Vencedor: Hijo 
+-0.508037 -0.790292 dis1  0.079
+desviacion0.367197
+dis2  0.096
+
+ 
+ Individuo Generado
+-0.412037 -0.694292 
+ 
+ fitOriginal : 112.187
+
+ fitGenerado : 76.655
+
+ Vencedor: Padre 
+-0.508037 -0.790292 dis1  0.159
+desviacion0.367197
+dis2  0.018
+
+ 
+ Individuo Generado
+-0.490037 -0.772292 
+ 
+ fitOriginal : 112.187
+
+ fitGenerado : 104.721
+
+ Vencedor: Padre 
+-0.508037 -0.790292 dis1  -0.244
+desviacion0.367197
+dis2  -0.142
+
+ 
+ Individuo Generado
+-0.650037 -0.932292 
+ 
+ fitOriginal : 112.187
+
+ fitGenerado : 186.282
+ 
+ Vencedor: Hijo 
+-0.650037 -0.932292 dis1  -0.501
+desviacion0.449446
+dis2  -0.271
+
+ 
+ Individuo Generado
+-0.921037 -1.20329 
+ 
+ fitOriginal : 186.282
+
+ fitGenerado : 424.597
+ 
+ Vencedor: Hijo 
+-0.921037 -1.20329 dis1  -0.001
+desviacion0.449446
+dis2  -0.187
+
+ 
+ Individuo Generado
+-1.10804 -1.39029 
+ 
+ fitOriginal : 424.597
+
+ fitGenerado : 689.856
+ 
+ Vencedor: Hijo 
+-1.10804 -1.39029 dis1  -0.234
+desviacion0.449446
+dis2  -0.373
+
+ 
+ Individuo Generado
+-1.48104 -1.76329 
+ 
+ fitOriginal : 689.856
+
+ fitGenerado : 1571.75
+ 
+ Vencedor: Hijo 
+-1.48104 -1.76329 dis1  0.048
+desviacion0.449446
+dis2  -0.369
+
+ 
+ Individuo Generado
+-1.85004 -2.048 
+ 
+ fitOriginal : 1571.75
+
+ fitGenerado : 3000.91
+ 
+ Vencedor: Hijo 
+-1.85004 -2.048 dis1  0.357
+desviacion0.449446
+dis2  0.419
+
+ 
+ Individuo Generado
+-1.43104 -1.629 
+ 
+ fitOriginal : 3000.91
+
+ fitGenerado : 1357.84
+
+ Vencedor: Padre 
+-1.85004 -2.048 dis1  0.54
+desviacion0.449446
+dis2  0.012
+
+ 
+ Individuo Generado
+-1.83804 -2.036 
+ 
+ fitOriginal : 3000.91
+
+ fitGenerado : 2939.6
+
+ Vencedor: Padre 
+-1.85004 -2.048 dis1  0.282
+desviacion0.449446
+dis2  0.142
+
+ 
+ Individuo Generado
+-1.70804 -1.906 
+ 
+ fitOriginal : 3000.91
+
+ fitGenerado : 2333.84
+
+ Vencedor: Padre 
+-1.85004 -2.048 dis1  1.363
+desviacion0.449446
+dis2  -0.11
+
+ 
+ Individuo Generado
+-1.96004 -2.048 
+ 
+ fitOriginal : 3000.91
+
+ fitGenerado : 3477.67
+ 
+ Vencedor: Hijo 
+-1.96004 -2.048 dis1  0.028
+desviacion0.449446
+dis2  0.912
+
+ 
+ Individuo Generado
+-1.04804 -1.136 
+ 
+ fitOriginal : 3477.67
+
+ fitGenerado : 503.44
+
+ Vencedor: Padre 
+-1.96004 -2.048 dis1  0.072
+desviacion0.449446
+dis2  -0.296
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3477.67
+
+ fitGenerado : 3905.93
+ 
+ Vencedor: Hijo 
+-2.048 -2.048 dis1  -0.142
+desviacion0.550117
+dis2  -0.503
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.261
+desviacion0.550117
+dis2  1.677
+
+ 
+ Individuo Generado
+-0.371 -0.371 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 27.7512
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.253
+desviacion0.550117
+dis2  -0.342
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.142
+desviacion0.550117
+dis2  -0.22
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.437
+desviacion0.550117
+dis2  0.582
+
+ 
+ Individuo Generado
+-1.466 -1.466 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1313.02
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.278
+desviacion0.550117
+dis2  0.767
+
+ 
+ Individuo Generado
+-1.281 -1.281 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 858.989
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.626
+desviacion0.550117
+dis2  -0.479
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.36
+desviacion0.550117
+dis2  -0.099
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.147
+desviacion0.550117
+dis2  0.46
+
+ 
+ Individuo Generado
+-1.588 -1.588 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1695.7
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.189
+desviacion0.550117
+dis2  -0.502
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.172
+desviacion0.550117
+dis2  0.027
+
+ 
+ Individuo Generado
+-2.021 -2.021 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3736.77
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.274
+desviacion0.550117
+dis2  -0.202
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.587
+desviacion0.550117
+dis2  0.272
+
+ 
+ Individuo Generado
+-1.776 -1.776 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2438.37
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.389
+desviacion0.550117
+dis2  0.238
+
+ 
+ Individuo Generado
+-1.81 -1.81 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2594.74
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.239
+desviacion0.550117
+dis2  -0.253
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.779
+desviacion0.550117
+dis2  -0.83
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.004
+desviacion0.550117
+dis2  0.145
+
+ 
+ Individuo Generado
+-1.903 -1.903 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3060.34
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.836
+desviacion0.550117
+dis2  -0.504
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.622
+desviacion0.550117
+dis2  0.236
+
+ 
+ Individuo Generado
+-1.812 -1.812 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2604.16
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.033
+desviacion0.550117
+dis2  0.222
+
+ 
+ Individuo Generado
+-1.826 -1.826 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2670.83
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.029
+desviacion0.550117
+dis2  -0.431
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.104
+desviacion0.550117
+dis2  0.209
+
+ 
+ Individuo Generado
+-1.839 -1.839 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2733.86
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.127
+desviacion0.550117
+dis2  0.527
+
+ 
+ Individuo Generado
+-1.521 -1.521 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1476.65
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.788
+desviacion0.550117
+dis2  0.468
+
+ 
+ Individuo Generado
+-1.58 -1.58 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1668.36
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.181
+desviacion0.550117
+dis2  0.305
+
+ 
+ Individuo Generado
+-1.743 -1.743 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2293.37
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  1.164
+desviacion0.550117
+dis2  -0.369
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.408
+desviacion0.550117
+dis2  0.247
+
+ 
+ Individuo Generado
+-1.801 -1.801 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2552.65
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.15
+desviacion0.550117
+dis2  -0.18
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.194
+desviacion0.550117
+dis2  -0.186
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.971
+desviacion0.550117
+dis2  -1.038
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.273
+desviacion0.550117
+dis2  0.964
+
+ 
+ Individuo Generado
+-1.084 -1.084 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 514.676
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.721
+desviacion0.550117
+dis2  -0.478
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.089
+desviacion0.550117
+dis2  -0.549
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.179
+desviacion0.550117
+dis2  -0.091
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.514
+desviacion0.550117
+dis2  0.692
+
+ 
+ Individuo Generado
+-1.356 -1.356 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1026.18
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.736
+desviacion0.550117
+dis2  -0.219
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.668
+desviacion0.550117
+dis2  0.235
+
+ 
+ Individuo Generado
+-1.813 -1.813 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2608.88
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  1.341
+desviacion0.550117
+dis2  0.028
+
+ 
+ Individuo Generado
+-2.02 -2.02 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3730.61
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.006
+desviacion0.550117
+dis2  -0.818
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.253
+desviacion0.550117
+dis2  -0.635
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.422
+desviacion0.550117
+dis2  -0.28
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.175
+desviacion0.550117
+dis2  -1.354
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  1.108
+desviacion0.550117
+dis2  1.157
+
+ 
+ Individuo Generado
+-0.891 -0.891 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 287.458
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.17
+desviacion0.550117
+dis2  -0.227
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.213
+desviacion0.550117
+dis2  -0.115
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.183
+desviacion0.550117
+dis2  -0.97
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.172
+desviacion0.550117
+dis2  -0.049
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.404
+desviacion0.550117
+dis2  0.858
+
+ 
+ Individuo Generado
+-1.19 -1.19 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 683.972
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.173
+desviacion0.550117
+dis2  0.144
+
+ 
+ Individuo Generado
+-1.904 -1.904 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3065.66
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.176
+desviacion0.550117
+dis2  -0.072
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.002
+desviacion0.550117
+dis2  -0.048
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.449
+desviacion0.550117
+dis2  0.155
+
+ 
+ Individuo Generado
+-1.893 -1.893 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3007.52
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.621
+desviacion0.550117
+dis2  0.435
+
+ 
+ Individuo Generado
+-1.613 -1.613 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1783.26
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.618
+desviacion0.550117
+dis2  0.176
+
+ 
+ Individuo Generado
+-1.872 -1.872 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2898.8
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.578
+desviacion0.550117
+dis2  -0.065
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.37
+desviacion0.550117
+dis2  0.185
+
+ 
+ Individuo Generado
+-1.863 -1.863 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2853.11
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.385
+desviacion0.550117
+dis2  -0.636
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.195
+desviacion0.550117
+dis2  0.347
+
+ 
+ Individuo Generado
+-1.701 -1.701 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2118.15
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.686
+desviacion0.550117
+dis2  -1.173
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.79
+desviacion0.550117
+dis2  -0.061
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.092
+desviacion0.550117
+dis2  -0.077
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.008
+desviacion0.550117
+dis2  0.484
+
+ 
+ Individuo Generado
+-1.564 -1.564 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1614.66
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.732
+desviacion0.550117
+dis2  0.329
+
+ 
+ Individuo Generado
+-1.719 -1.719 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2191.98
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.373
+desviacion0.550117
+dis2  0.043
+
+ 
+ Individuo Generado
+-2.005 -2.005 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3639.12
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.245
+desviacion0.550117
+dis2  -0.633
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  1.111
+desviacion0.550117
+dis2  0.518
+
+ 
+ Individuo Generado
+-1.53 -1.53 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1504.79
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.125
+desviacion0.550117
+dis2  0.408
+
+ 
+ Individuo Generado
+-1.64 -1.64 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1881.51
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.087
+desviacion0.550117
+dis2  0.319
+
+ 
+ Individuo Generado
+-1.729 -1.729 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2233.82
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.078
+desviacion0.550117
+dis2  0.094
+
+ 
+ Individuo Generado
+-1.954 -1.954 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3340.46
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.221
+desviacion0.550117
+dis2  -0.126
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -1.131
+desviacion0.550117
+dis2  -0.729
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.962
+desviacion0.550117
+dis2  0.421
+
+ 
+ Individuo Generado
+-1.627 -1.627 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 1833.72
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  -0.432
+desviacion0.550117
+dis2  0.255
+
+ 
+ Individuo Generado
+-1.793 -1.793 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 2515.66
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.019
+desviacion0.550117
+dis2  -0.254
+
+ 
+ Individuo Generado
+-2.048 -2.048 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3905.93
+
+ Vencedor: Padre 
+-2.048 -2.048 dis1  0.28
+desviacion0.550117
+dis2  0.123
+
+ 
+ Individuo Generado
+-1.925 -1.925 
+ 
+ fitOriginal : 3905.93
+
+ fitGenerado : 3178.95
+
+ Vencedor: Padre 
+-2.048 -2.048 

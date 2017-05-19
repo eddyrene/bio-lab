@@ -14,8 +14,6 @@ double normal(double x, double desvio)
 	retorno= retorno/ (desvio* sqrt(6.283184));
 	return retorno;
 }
-
-
 double valor_x(double l_i, double l_s, double desvio, double delta, double aleatorio)
 {
 	double area=0;
@@ -55,7 +53,7 @@ int main()
 	double li= -2.048;
 	double ls= 2.048;
 	double desvio_ini = 0.3;
-	int iteraciones = 10;
+	int iteraciones = 100;
 	vector<double> individuo;
 	vector<double> individuoT1;
 
@@ -64,25 +62,43 @@ int main()
 	individuo.push_back(x);individuo.push_back(y);
 	printVect("\n Individuo inicial", individuo);
 
-
+	int contador=0;
 	int tt=0;
 	while(tt<iteraciones)
 	{
 		int times =0;	
 		int success=0; int failures =0;
 		double c = 0.817;
-		while(times<10)
-		{
-			//double dist = valor_x(-10000, 10000, desvio_ini,0.5, individuo);
-			double dist1 = 0.1 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(0.9-0.1)));//valor_x(-10000, 10000, desvio_ini,0.5, individuo);
+		contador++;
+
+		//while(times<10)
+		//{
+			double aleatorio1 = 0 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(1-0)));//valor_x(-10000, 10000, desvio_ini,0.5, individuo);
+			double aleatorio2 = 0 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(1-0)));//valor_x(-10000, 10000, desvio_ini,0.5, individuo);
+			double dist1 = valor_x(li, ls, desvio_ini,0.001,aleatorio1);
+			cout<<"dis1  "<<dist1<<endl;
+			//double dist1 = 0.1 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(0.9-0.1)));//valor_x(-10000, 10000, desvio_ini,0.5, individuo);
 			dist1= dist1+desvio_ini;
-			double dist2 = 0.1 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(0.9-0.1)));//valor_x(-10000, 10000, desvio_ini,0.5, individuo);
+			cout<<"desviacion"<<desvio_ini<<endl;
+			//double dist2 = 0.1 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(0.9-0.1)));//valor_x(-10000, 10000, desvio_ini,0.5, individuo);
+			double dist2 = valor_x(li,ls, desvio_ini,0.001,aleatorio2);
+			cout<<"dis2  "<<dist2<<endl;
 			dist1= dist2+desvio_ini;
 			//cout<<"valor a añadir "<<dist<<endl;
 			individuoT1.clear();
 			individuoT1.push_back(dist1);individuoT1.push_back(dist2);
-			individuoT1[0]= individuo[0]+ dist2;
+			individuoT1[0]= individuo[0]+ dist1;
 			individuoT1[1]= individuo[1]+ dist2;
+
+			if(individuoT1[0] < li)
+				individuoT1[0]=li;	
+			if(individuoT1[0] > ls)
+				individuoT1[0]=ls;
+			if(individuoT1[1] < li)
+				individuoT1[1]=li;
+			if(individuoT1[1] > ls)	
+				individuoT1[1]=ls;
+
 			printVect("\n \n Individuo Generado", individuoT1);	
 
 			double fitOriginal=  fitness(individuo);
@@ -102,12 +118,18 @@ int main()
 				printVect("\n Vencedor: Padre ", individuo);
 			}
 			times++;
-		}	
-		double ps = success /(success+failures);
-		if(ps<1/5)
-			desvio_ini= desvio_ini* c;
-		if(ps>1/5)
-			desvio_ini= desvio_ini/ c;
+		//}
+		if(contador==5)
+		{	
+			double ps = success /(success+failures);
+			if(ps<1/5)
+				desvio_ini= desvio_ini* c;
+			if(ps>1/5)
+				desvio_ini= desvio_ini/ c;
+			success=0;
+			failures=0;
+			contador=0;
+		}
 		tt++;
 			
 	}
