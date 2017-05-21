@@ -293,7 +293,8 @@ int main()
 	vector<individuo> individuosT;
 	//vector<double> individuoT1;
 
-	int numInd= 100;
+	int numInd= 50;
+	int lamda= 40;
 	cout<<"Generando individuosT"<<endl;
 	for(int i=0; i<numInd ; i++)
 	{
@@ -316,13 +317,15 @@ int main()
 		printVectIndividuosFitness(" \n Imprimiendo fitness", individuosT);
 		ruleta(individuosT);
 		printVectIndividuosFitnessPorcent("\n Imprimiendo Porcentajes", individuosT);
-		reproduction(individuosT, li, ls);
+		for(int i =0; i<lamda; i++ )
+			reproduction(individuosT, li, ls);
 		printVectIndividuosFitness("\n Nueva Poblacion ", individuosT);
 		calcFitness(individuosT);
 		sort(individuosT.begin(), individuosT.end(), OrderByMayor);
 		printVectIndividuosFitness("\n Individuos Ordenados ", individuosT);
-		individuosT.pop_back();
+		for(int i =0; i<lamda; i++ )
+			individuosT.pop_back();
 		printVectIndividuosFitness("\n Mejores Individuos ", individuosT);
 		c++;
 	}	
-}
+}	
