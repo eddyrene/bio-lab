@@ -97,7 +97,7 @@ void printVectIndividuosVari(string a, vector<individuo> m)
 			cout<<m[i].varianza[j]<<"    ";
 		}
 
-		cout<<"  "<<m[i].fit<<endl;
+		cout<<endl;
 	}
 }
 
@@ -109,6 +109,7 @@ void printVectIndividuosFitness(string a, vector<individuo> m)
 		for(int j=0; j< m[i].val.size(); j++)
 		{
 			cout<<m[i].val[j]<<"  ";
+			cout<<m[i].varianza[j]<<"    ";
 		}
 		//cout<<"  "<<std::setprecision(48)<<m[i].fit<<endl;
 		cout<<"  "<<m[i].fit<<endl;
@@ -224,7 +225,7 @@ individuo cross2ind(individuo &n , individuo &m)
 
 void mutation(individuo &n,double sizepob, double li, double ls)
 {
-	//(double l_i, double l_s, double desvio, sdouble delta, double aleatorio)
+	//(double l_i, double l_s, double desvio, double delta, double aleatorio)
 	cout<<"\n \n Se realizo la mutacion \n";
 	double k = 2*sqrt(sizepob);
 	double deltaVar =  1/sqrt(k);
@@ -282,8 +283,6 @@ bool OrderByMayor(individuo a, individuo b)
 
 int main()
 {
-	double f = 0.000000000000000000000000001456;
-	cout<<f;
 	///std::cout.setf( std::ios::fixed, std:: ios::floatfield );
 	//setprecision();
 	srand (time(NULL));
@@ -291,11 +290,12 @@ int main()
 	double li= -10;
 	double ls= 10;
 	double desvio_ini = 0.3;
-	int iteraciones = 200;
+	int iteraciones = 100;
 	vector<individuo> individuosT;
 	//vector<double> individuoT1;
 
-	int numInd= 100;
+	int numInd= 50;
+	int lamda= 40;
 	cout<<"Generando individuosT"<<endl;
 	for(int i=0; i<numInd ; i++)
 	{
@@ -313,18 +313,20 @@ int main()
 	while(c<iteraciones)
 	{
 		cout<<"**************      Iteracion "<<c<<"*****************"<<endl;
-		printVectIndividuosVari("\n Los Individuos iniciales ", individuosT);
+		//printVectIndividuosVari("\n Los Individuos iniciales ", individuosT);
 		calcFitness(individuosT);
 		//printVectIndividuosFitness(" \n Imprimiendo fitness", individuosT);
 		ruleta(individuosT);
 		//printVectIndividuosFitnessPorcent("\n Imprimiendo Porcentajes", individuosT);
-		reproduction(individuosT, li, ls);
+		for(int i =0; i<lamda; i++ )
+			reproduction(individuosT, li, ls);
 		//printVectIndividuosFitness("\n Nueva Poblacion ", individuosT);
 		calcFitness(individuosT);
 		sort(individuosT.begin(), individuosT.end(), OrderByMayor);
 		//printVectIndividuosFitness("\n Individuos Ordenados ", individuosT);
-		individuosT.pop_back();
-		//printVectIndividuosFitness("\n Mejores Individuos ", individuosT);
+		for(int i =0; i<lamda; i++ )
+			individuosT.pop_back();
+		printVectIndividuosFitness("\n Mejores Individuos ", individuosT);
 		c++;
 	}	
-}
+}	
