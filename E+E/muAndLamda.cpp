@@ -11,12 +11,12 @@ using namespace std;
 
 double Pi= 3.14159;
 
-typedef decimal<10> BIGDECIMAL; 
+//typedef decimal<10> double; 
 
 typedef struct {
 	vector<double> val,varianza;
-	BIGDECIMAL fit;
-	BIGDECIMAL porcent;
+	double fit;
+	double porcent;
 }individuo;
 
 double normal(double x, double desvio)
@@ -43,14 +43,14 @@ double valor_x(double l_i, double l_s, double desvio, double delta, double aleat
 	return std::numeric_limits<double>::min();
 }
 
-BIGDECIMAL evalVect(std::vector<double> v)
+double evalVect(std::vector<double> v)
 {
 	double x= v[0];double y= v[1];
 	/*cout<<" "<<-cos(x)*cos(y)*exp(-pow((x-Pi),2)-pow((y-Pi),2));*/
 	//double r = 100*pow((x*x - y),2) + pow((1- x),2); 
 	double r = -1*cos(x)*cos(y)*exp(-1*pow((x-Pi),2)-pow((y-Pi),2));
 
- 	BIGDECIMAL t =decimal_cast<10>(r);
+ 	double t =r;
 	//cout<<"   x:"<<x<<"      y:"<<y<<"      r"<<r<<endl;
 	return t;
 }
@@ -59,7 +59,7 @@ void calcFitness(vector<individuo> &m)
 {
 	for(int i=0;i< m.size(); i++)
 	{
-		BIGDECIMAL f=evalVect(m[i].val);
+		double f=evalVect(m[i].val);
 		m[i].fit=f ;//*10000000;
 		//cout<<"f:  "<<m[i].fit<<endl;
 	}
@@ -109,6 +109,7 @@ void printVectIndividuosFitness(string a, vector<individuo> m)
 		for(int j=0; j< m[i].val.size(); j++)
 		{
 			cout<<m[i].val[j]<<"  ";
+			cout<<m[i].varianza[j]<<"    ";
 		}
 		//cout<<"  "<<std::setprecision(48)<<m[i].fit<<endl;
 		cout<<"  "<<m[i].fit<<endl;
@@ -136,12 +137,12 @@ double genRandom(double li, double ls)
 void ruleta(vector<individuo> &v)
 {
     cout<<"\nSelección de Individuos - Método de la Ruleta"<<endl;
-    vector<BIGDECIMAL> acumulador;
+    vector<double> acumulador;
     for (int i =0; i < v.size() ; i++)
     	acumulador.push_back(v[i].fit);
-    BIGDECIMAL min (*(min_element(acumulador.begin(), acumulador.end())));
+    double min (*(min_element(acumulador.begin(), acumulador.end())));
 
-    min=min.abs();
+    min=abs(min);
     cout<<"este es el minimo elemento"<<min<<endl;
 
     for (int i =0; i < v.size() ; i++)
@@ -154,8 +155,8 @@ void ruleta(vector<individuo> &v)
     printVectIndividuosFitness("Imprimiendo nuevos fitness", v);
 
     double a =0;
-    BIGDECIMAL sum_ruleta(0);
-    BIGDECIMAL cerito(0);
+    double sum_ruleta(0);
+    double cerito(0);
     cerito*=0;
     sum_ruleta*=0;
     //double sum_ruleta=0;    
@@ -190,9 +191,9 @@ void ruleta(vector<individuo> &v)
 
 int chooseRandomParent(std::vector<individuo> &v)
 {
-  BIGDECIMAL num (rand()%100);
+  double num (rand()%100);
   cout<<"Numero para padre Ramdom:  "<< num<<endl;
-  BIGDECIMAL s(0);
+  double s(0);
   s*=0;
   for (int i =0; i < v.size() ; i++)
   {
@@ -229,14 +230,14 @@ void mutation(individuo &n,double sizepob, double li, double ls)
 	double k = 2*sqrt(sizepob);
 	double deltaVar =  1/sqrt(k);
 	cout<<"delta  "<<deltaVar<<endl;
-	double ale= genRandom(li,ls);
-	cout<<"El numero radom   "<<ale<<endl;
-	double dn = valor_x(li,ls,deltaVar,0.01,ale);
-	cout<<"Desvio Normal   \n "<<dn<<"  "<<exp(dn)<<endl;
-	double newDes = n.varianza[0]*exp(dn);
-	cout<<"Nueva varianza \n "<<newDes<<endl;
 	for(int i =0;i<n.val.size();i++)
 	{
+		double ale= genRandom(li,ls);
+		cout<<"El numero radom   "<<ale<<endl;
+		double dn = valor_x(li,ls,deltaVar,0.01,ale);
+		cout<<"Desvio Normal   \n "<<dn<<"  "<<exp(dn)<<endl;
+		double newDes = n.varianza[i]*exp(dn);
+		cout<<"Nueva varianza \n "<<newDes<<endl;
 		double a= genRandom(li,ls);
 		double b= valor_x(li,ls,newDes,0.01,a);
 		cout<<"b "<<b<<endl;
@@ -312,17 +313,17 @@ int main()
 	while(c<iteraciones)
 	{
 		cout<<"**************      Iteracion "<<c<<"*****************"<<endl;
-		printVectIndividuosVari("\n Los Individuos iniciales ", individuosT);
+		//printVectIndividuosVari("\n Los Individuos iniciales ", individuosT);
 		calcFitness(individuosT);
-		printVectIndividuosFitness(" \n Imprimiendo fitness", individuosT);
+		//printVectIndividuosFitness(" \n Imprimiendo fitness", individuosT);
 		ruleta(individuosT);
-		printVectIndividuosFitnessPorcent("\n Imprimiendo Porcentajes", individuosT);
+		//printVectIndividuosFitnessPorcent("\n Imprimiendo Porcentajes", individuosT);
 		for(int i =0; i<lamda; i++ )
 			reproduction(individuosT, li, ls);
-		printVectIndividuosFitness("\n Nueva Poblacion ", individuosT);
+		//printVectIndividuosFitness("\n Nueva Poblacion ", individuosT);
 		calcFitness(individuosT);
 		sort(individuosT.begin(), individuosT.end(), OrderByMayor);
-		printVectIndividuosFitness("\n Individuos Ordenados ", individuosT);
+		//printVectIndividuosFitness("\n Individuos Ordenados ", individuosT);
 		for(int i =0; i<lamda; i++ )
 			individuosT.pop_back();
 		printVectIndividuosFitness("\n Mejores Individuos ", individuosT);
