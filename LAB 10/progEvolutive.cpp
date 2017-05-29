@@ -6,7 +6,6 @@
 #include <cstdlib>
 #include <list>
 
-
 using namespace std;
 
 typedef struct {
@@ -21,99 +20,151 @@ typedef struct {
 	vector<int> VA;
 }individuo;
 
-void printIndividuo(string s , individuo a)
+void printIndividuo(string s , individuo a);
+
+individuo mutacion(individuo ind)
 {
-	cout<<s;
-	for(int i =0 ; i< a.vectEstados.size();i++ )
+	individuo ar=ind;
+	ar.VA=ind.VA;	
+	//printIndividuo("realmente copia", ar);
+	int prob= rand()%100;
+	int type=0;
+	if(prob<=20)
 	{
-		cout<<a.vectEstados[i].cadena<<"  ";
-	}
-	cout<<"inicial: "<<a.inicial<<"  fitness:  "<<a.fit<<endl;
-}
-string evalIndividuo(string cad,individuo & ind)
-{
-	string result;
-	for(int i = 0;i< cad.size();i++)
-	{
-		int estIni=ind.inicial;
-		estado ini = ind.vectEstados[estIni];
-		if(ini.cadena[1]==cad[i])
+		cout<<type<<endl;
+		int r= rand() % ar.VA.size();
+		int est= ar.VA[r];
+		//estado elegido = ar.vectEstados[est];
+		ar.vectEstados[est].cadena[0]='0';
+		ar.vectEstados[est].active=false;
+		vector<int> tmp= ar.VA;
+		ar.VA.clear();
+		for(int i=0;i<tmp.size();i++)
 		{
-			result+=ini.cadena[3];
-			char Next = ini.cadena[5];
-			estado ini = ind.vectEstados[Next-65];
+			if(ar.vectEstados[i].active==true)
+				ar.VA.push_back(i);
+		}
+		cout<<"hasta aqui"<<endl;
+		if(ar.VA.size()>1)
+		{
+			if(ar.inicial==est)
+			{	
+				cout<<"tamaño"<<ar.VA.size()<<endl;
+				cout<<rand()%ar.VA.size()<<endl;
+				ar.inicial=ar.VA[rand()%ar.VA.size()];
+			}
+			for(int i =0;i<ar.VA.size();i++)
+			{
+				cout<<ar.VA.size()<<" "<<endl;
+				// Seleccion de estados;
+				for(int l=0;l<2;l++)
+				{
+					int estado=ar.VA[rand() % ar.VA.size()];
+					ar.vectEstados[ar.VA[i]].cadena[5+l]='A'+estado;	
+				}	
+			}
 		}
 		else
 		{
-			if(ini.cadena[2]==cad[i])
-			{
-				result+=ini.cadena[4];
-				char Next = ini.cadena[6];
-				estado ini = ind.vectEstados[Next-65];
-			}
+			ar.inicial=ar.VA[0];
+			
 		}
-	}
-	int count=0;
-	for(int k=0;k<result.size();k++)
-	{
-		if(cad[k+1]==result[k])
-			count++;
-	}
-	ind.fit=count;
-	return result;
-}
-
-void mutacion(individuo & ind)
-{
-	int prob= rand()%100;
-	if(prob<=20)
-	{
-		int r= rand() % ind.VA.size();
-		int est= ind.VA[r];
-		estado elegido = ind.vectEstados[est];
-		elegido.cadena[0]='0';
-		elegido.active=false;
 	}
 	if(prob>20 && prob<=40)
 	{
+		type=1;
+		cout<<type<<endl;
 		int est=ind.inicial;
-		while(est==ind.inicial)
+		if(ar.VA.size()>=2)
 		{
-			int r= rand() % ind.VA.size();
-			est= ind.VA[r];
-		}	
-		ind.inicial=est;
+			while(est==ind.inicial)
+			{
+				int r= rand() % ar.VA.size();
+				est= ar.VA[r];
+			}	
+			ar.inicial=est;	
+		}
+		else
+		{
+			int est=ind.inicial;
+		}
 	}
+
 	if(prob>40 && prob<=60)
 	{
-		
-
-
-		//ind.cadena
+		type=2;
+		cout<<type<<endl;
+		int r= rand() % ar.VA.size();
+		int est= ar.VA[r];
+//		estado elegido = ind.vectEstados[est];
+		char tmp=ar.vectEstados[est].cadena[1];
+		ar.vectEstados[est].cadena[1]=ar.vectEstados[est].cadena[2];
+		ar.vectEstados[est].cadena[2]=tmp;
 	}
 	if(prob>60 && prob<=80)
 	{
-
+		type=3;
+		cout<<type<<endl;
+		//if(ar.VA.size()!=0)
+		int r= rand() % ar.VA.size();
+		int est= ind.VA[r];
+//		estado elegido = ind.vectEstados[est];
+		char tmp=ar.vectEstados[est].cadena[3];
+		ar.vectEstados[est].cadena[3]=ar.vectEstados[est].cadena[4];
+		//ind.vectEstados[est].cadena[4]=tmp;
 	}
 	if(prob>80)
 	{
+		type=4;
+		cout<<"type  "<<type<<endl;
 		list<int>inactivos;
-		inactivos.resize(4);
+		//inactivos.resize(4);
 		inactivos.push_back(0);
 		inactivos.push_back(1);
 		inactivos.push_back(2);
 		inactivos.push_back(3);
-		for(auto a : ind.VA)
+		//cout<<"activos"<<ar.VA.size()<<endl;
+		for(auto a : ar.VA)
 		{
 			inactivos.remove(a);
 		}
-		int r = rand()%inactivos.size();
-		std::list<int>::iterator it1 = inactivos.begin();
-		int t=0;
-		while(t<r)
-			++it1;
-		ind.vectEstados[*it1].active=true;
+		//cout<<"inactivos "<<inactivos.size()<<endl;
+		if(inactivos.size()==0)
+		{		}
+		else
+		{
+			int r = rand()%inactivos.size();
+			list<int>::iterator it1 = inactivos.begin();
+			int t=0;
+			while(t<r)
+			{
+				++it1;
+				t++;
+			}
+			//cout<<*it1<<endl;
+			ar.vectEstados[*it1].active=true;
+			ar.vectEstados[*it1].cadena[0]='1';
+			ar.VA.push_back(*it1);
+
+			//Actualizo Estados Activos;
+			/*for(int i =0;i<ar.vectEstados.size();i++)
+			{
+				/ Seleccion de estados;
+				for(int l=0;l<2;l++)
+				{
+					int pos = rand() % ar.VA.size();
+					int estado=ar.VA[pos];
+					ar.vectEstados[i].cadena[5+l]='A'+estado;	
+				}	
+				int pos = rand() % ar.VA.size();
+				int estado=ar.VA[pos];
+				ar.inicial=estado;		
+			}*/
+
+		}
 	}
+	cout<<"tipo de mutacion  "<<type<<endl;
+	return ar;
 }
 individuo getRandomInd(int numEstado, int tamEstado)
 {				
@@ -177,29 +228,131 @@ individuo getRandomInd(int numEstado, int tamEstado)
 	return nuevo;
 }
 
+void reproduccion(string a ,std::vector<individuo> &v, int tam)
+{
+	cout<<a;
+	for(int i=0;i<tam;i++)
+	{
+		individuo n = mutacion(v[i]);
+		v.push_back(n);
+		//cout<<"agrego"<<endl;
+	}
+}
+void printIndividuo(string s , individuo a)
+{
+	cout<<s;
+	for(int i =0 ; i< a.vectEstados.size();i++ )
+	{
+		cout<<a.vectEstados[i].cadena<<"  ";
+	}
+	cout<<"inicial: "<<a.inicial<<"  fitness:  "<<a.fit<<endl;
+}
+void printfPob(string a, std::vector<individuo> &v)
+{
+	cout<<a;
+	int h=0;
+	for(auto &i: v)
+	{
+		cout<<h<<") ";
+		for(int j=0;j<i.vectEstados.size();j++)
+		{
+			cout<<i.vectEstados[j].cadena<<"  ";
+		}
+
+		cout<<"inicial: "<<i.inicial<<"  fitness:  "<<i.fit<<" numero de activos: "<<i.VA.size()<<endl;		
+		h++;
+	}
+}
+bool OrderByMayor(individuo a, individuo b)
+{
+	if(a.fit>b.fit)
+	{
+		return true;
+	}
+	return false;
+}
+
+string evalIndividuo(string cad,individuo &ind)
+{
+	string result;
+	for(int i = 0;i< cad.size();i++)
+	{
+		int estIni=ind.inicial;
+		estado ini = ind.vectEstados[estIni];
+		if(ini.cadena[1]==cad[i])
+		{
+			result+=ini.cadena[3];
+			char Next = ini.cadena[5];
+			estado ini = ind.vectEstados[Next-65];
+		}
+		else
+		{
+			if(ini.cadena[2]==cad[i])
+			{
+				result+=ini.cadena[4];
+				char Next = ini.cadena[6];
+				estado ini = ind.vectEstados[Next-65];
+			}
+		}
+	}
+	int count=0;
+	for(int k=0;k<result.size()-1;k++)
+	{
+		cout<<cad[k+1]<<"   "<<result[k]<<endl;
+		if(cad[k+1]==result[k])
+			count++;
+		//cout<<count<<endl;
+	}
+	ind.fit=count;
+	//cout<<"fit "<<ind.fit<<endl;
+	return result;
+}
+void EvalPoblacion(string input, std::vector<individuo> &v)
+{
+	for(int i=0;i<v.size();i++)
+		evalIndividuo(input,v[i]);//<<" "<<endl;
+}
 int main()
 {
 	srand (time(NULL));
 	int numeroEstados= 4;
 	int tamanoEstados = 7;
-	int numeroIndividuos = 10; 
+	int numeroIndividuos = 20; 
 	vector<individuo> pobIndividuos;
+	int iteraciones=50;
 	for(int i=0;i<numeroIndividuos;i++)
 	{
 		individuo r = getRandomInd(numeroEstados,tamanoEstados);
-		pobIndividuos.push_back(r);	
+		pobIndividuos.push_back(r);		
 		printIndividuo("",r);
 	}
-	//string input="NSSNSSNSSNSSNSS";
-	string input="NSSNSSNSS";
-	for(auto r : pobIndividuos)
+	int c=0;
+	while(c<iteraciones)
 	{
-
-		cout<<evalIndividuo(input,r)<<" ";
-		printIndividuo("",r);
+		cout<<"**************      Iteracion "<<c<<"*****************"<<endl;
+		reproduccion("Los individuos se reproducen \n", pobIndividuos,numeroIndividuos);
+		printfPob("Nueva Poblacion \n", pobIndividuos);
+		string input="NSSNSSNSSNSSNSS";
+		//string input="NSSNSSNSS";
+		EvalPoblacion(input,pobIndividuos);
+		printfPob("evaluando a los individuoss \n", pobIndividuos);
+		pobIndividuos.size();
+		vector<individuo> vn;
+		vn.clear();
+		for(int i=0;i<pobIndividuos.size();i++)
+		{
+			if(pobIndividuos[i].VA.size()>2)
+				vn.push_back(pobIndividuos[i]);
+		}
+		pobIndividuos.clear();
+		pobIndividuos=vn;
+		sort(pobIndividuos.begin(), pobIndividuos.end(), OrderByMayor);
+		printfPob("Ordenando individuos \n", pobIndividuos);
+		int lim =pobIndividuos.size();
+		for(int i=0;i<(pobIndividuos.size()-(numeroIndividuos+1));i++)
+			pobIndividuos.pop_back();
+		printfPob("Los más aptos\n ", pobIndividuos);	
+		c++;
 	}
-	
-
-	//cout<<'A'-65<<endl;
 	return 0;
 }
