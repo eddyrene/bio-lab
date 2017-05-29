@@ -204,8 +204,6 @@ int chooseRandomParent(std::vector<individuo> &v)
 }
 
 
-
-
 void printIndividuo(string a, individuo m)
 {
 	cout<<a<<endl;
