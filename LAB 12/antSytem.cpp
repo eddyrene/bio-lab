@@ -11,16 +11,56 @@ typedef pair<int,int> tupla;
 typedef vector<vector<double> > mat;
 
 typedef struct {
-	vector<tupla> visited;
+	vector<char> visited;
 	vector<char> enables;
-	string outString;
 }hormiga;
 
+mat MT; //matriz de transcion , distancia
+mat MF; //matriz de Feromonas
+mat MV; //matriz de Visibilidad
 
-mat MT;
-mat MF;
-mat MV;
 
+void printHormiga(hormiga &a)
+{
+	cout<<"visitados"<<" - ";
+	for(auto w :a.visited)
+		cout<<w<<" ";	
+	cout<<"disponibles"<<" - ";
+	for(auto w: a.enables)
+		cout<<w<<" ";
+}
+void printHormiguero(string a, vector<hormiga> &h)
+{
+	cout<<a;
+	for(int i=0;i<h.size();i++)
+	{
+		printHormiga(h[i]);
+		cout<<endl;
+	}
+}
+void startHormiguero(vector<hormiga> &a, int cant, int f)
+{
+	a.resize(cant);
+	for(int i=0;i<a.size();i++)
+	{
+		a[i].visited.resize(f);
+		a[i].enables.resize(f);
+	}
+
+	for(int i=0;i<a.size();i++)
+	{
+		a[i].visited[0]='0';
+		a[i].visited[1]='0';
+		a[i].visited[2]='0';
+		a[i].visited[3]='0';
+		a[i].visited[4]='0';
+		a[i].enables[0]='A';
+		a[i].enables[1]='B';
+		a[i].enables[2]='C';
+		a[i].enables[3]='D';
+		a[i].enables[4]='E';
+	}
+}
 int start(int f , int c, double fi)
 {
 	MT.resize(f);
@@ -38,7 +78,7 @@ int start(int f , int c, double fi)
 		MF[i].resize(c);
 	
 	for(int i=0;i<f;i++)
-		for(int j=0;j<c;j++)
+		for(int j=0;j<c;j++) 
 			MF[i][j]=fi;
 
 	MV.resize(f);
@@ -64,13 +104,68 @@ void matrixVisilibidad(int f, int c)
 			MV[i][j]=1/MT[i][j];
 
 }
+
+double genRandom(double li, double ls)
+{
+	//srand (time(NULL));
+	return li + static_cast <double> (rand()) /( static_cast <double> (RAND_MAX/(ls-li)));
+}
+int  ruleta(int ciuIni, int columnas)
+{
+	double ruleta=0;
+	vector<double> vProb; vProb.resize(columnas,0);
+	vector<double> vCoste; vCoste.resize(columnas,0);
+	cout<<"Activaciones"<<endl;
+	for(int i=0;i<columnas;i++)
+	{
+		if(i!=ciuIni)
+		{	
+			vCoste[i]=MF[ciuIni][i]* MV[ciuIni][i]; 
+			ruleta += vCoste[i];
+			//cout<<MF[ciuIni][i]* MV[ciuIni][i]<<endl;
+			cout<<vCoste[i]<<endl;
+		}
+	}
+	cout<<"suma: "<<ruleta<<endl<<"probabilidades: "<<endl;
+	for(int i=0;i<columnas;i++)
+	{
+		if(i!=ciuIni)
+		{
+			vProb[i]=ruleta/vCoste[i];
+			cout<<vProb[i]<<endl;
+		}
+	}
+	double r= genRandom(0,1);
+	cout<<"Numero aleatorio :"<<r<<endl;
+	double acu=0;
+	for(int i=0;i<vProb.size();i++)
+	{
+		acu+=vProb[i];
+		cout<<"acumnulado: "<<acu<<endl;
+		if(r<=acu)	
+			return i;
+	}
+	return columnas-1;
+}
+
 int main()
 {
+	int cantHormigas=4;
+	vector<hormiga> hormiguero;
+	int alfa=1; int beta=1; int Q=1; int p= 0.99; int maxitera=100;
 	int filas = 5; int columnas = 5; double feromona=0.1;
 	start(filas,columnas,feromona);
-	printMat("Matriz de distancia \n", MT, filas, columnas);
-	printMat("Matriz de feromonas \n", MF, filas, columnas);
+	printMat("\n Matriz de distancia \n \n", MT, filas, columnas);
+	printMat("\n Matriz de feromonas \n \n", MF, filas, columnas);
 	matrixVisilibidad(filas, columnas);
-	printMat("Matriz de visibilidad \n", MV, filas, columnas);
+	printMat("\n Matriz de visibilidad \n \n", MV, filas, columnas);
+	startHormiguero(hormiguero,cantHormigas, filas);
+	printHormiguero("\n Imprimiendo Hormiguero \n",hormiguero);
+	int ciuIni=3;//D
+	//Matriz de feromonas por visibilidad
+	int next=ruleta(ciuIni,columnas);
+	cout<<"siguiente estado: "<< next <<endl;
+
+
 	return 0;
 }
