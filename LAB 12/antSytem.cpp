@@ -3,31 +3,38 @@
 #include <string>
 #include <cmath>
 #include <algorithm>
+#include <list>
+#include <iterator>
 
 using namespace std;
-
 
 typedef pair<int,int> tupla;
 typedef vector<vector<double> > mat;
 
 typedef struct {
-	vector<char> visited;
-	vector<char> enables;
+	vector<int> camino;
+	list<char> enables;
+	double fitness;
 }hormiga;
 
 mat MT; //matriz de transcion , distancia
 mat MF; //matriz de Feromonas
 mat MV; //matriz de Visibilidad
 
+bool compare(hormiga a, hormiga b)
+{
+	if(a.fitness<b.fitness) return true; return false;
+}
 
 void printHormiga(hormiga &a)
 {
 	cout<<"visitados"<<" - ";
-	for(auto w :a.visited)
+	for(auto w :a.camino)
 		cout<<w<<" ";	
 	cout<<"disponibles"<<" - ";
 	for(auto w: a.enables)
 		cout<<w<<" ";
+	cout<<"fitness  "<< a.fitness;
 }
 void printHormiguero(string a, vector<hormiga> &h)
 {
@@ -41,24 +48,18 @@ void printHormiguero(string a, vector<hormiga> &h)
 void startHormiguero(vector<hormiga> &a, int cant, int f)
 {
 	a.resize(cant);
-	for(int i=0;i<a.size();i++)
+	/*for(int i=0;i<a.size();i++)
 	{
 		a[i].visited.resize(f);
 		a[i].enables.resize(f);
-	}
-
+	}*/
 	for(int i=0;i<a.size();i++)
 	{
-		a[i].visited[0]='0';
-		a[i].visited[1]='0';
-		a[i].visited[2]='0';
-		a[i].visited[3]='0';
-		a[i].visited[4]='0';
-		a[i].enables[0]='A';
-		a[i].enables[1]='B';
-		a[i].enables[2]='C';
-		a[i].enables[3]='D';
-		a[i].enables[4]='E';
+		a[i].enables.push_back('A');
+		a[i].enables.push_back('B');
+		a[i].enables.push_back('C');
+		a[i].enables.push_back('D');
+		a[i].enables.push_back('E');
 	}
 }
 int start(int f , int c, double fi)
@@ -84,7 +85,6 @@ int start(int f , int c, double fi)
 	MV.resize(f);
 	for(int i=0;i<f;i++)
 		MV[i].resize(c);	
-
 }
 
 void printMat(string text, mat a, int f, int c)
@@ -102,54 +102,80 @@ void matrixVisilibidad(int f, int c)
 	for(int i=0;i<f;i++)
 		for(int j=0;j<c;j++)
 			MV[i][j]=1/MT[i][j];
-
 }
-
 double genRandom(double li, double ls)
 {
 	//srand (time(NULL));
 	return li + static_cast <double> (rand()) /( static_cast <double> (RAND_MAX/(ls-li)));
 }
-int  ruleta(int ciuIni, int columnas)
+
+void ruleta(int ciuIni, int columnas, vector<hormiga> &hor)
 {
-	double ruleta=0;
-	vector<double> vProb; vProb.resize(columnas,0);
-	vector<double> vCoste; vCoste.resize(columnas,0);
 	cout<<"Activaciones"<<endl;
-	for(int i=0;i<columnas;i++)
+	for(int h=0; h<hor.size(); h++)
 	{
-		if(i!=ciuIni)
+		cout<<"*******HORMIGA: "<<h<<endl;
+		double ruleta=0;
+		vector<double> vProb;
+		vProb.resize(columnas,0);
+		vector<double> vCoste; vCoste.resize(columnas,0);
+		//for(int i=0;i<hor;[h].enables.size();i++)
+		int inicial =ciuIni;
+		int times=0;
+		while(hor[h].enables.size())
 		{	
-			vCoste[i]=MF[ciuIni][i]* MV[ciuIni][i]; 
-			ruleta += vCoste[i];
-			//cout<<MF[ciuIni][i]* MV[ciuIni][i]<<endl;
-			cout<<vCoste[i]<<endl;
-		}
+			//cout<<"b"<<endl;
+			//int i=0;
+			ruleta=0;
+			vProb.clear(); vCoste.clear();
+			hor[h].camino.push_back(inicial);
+			hor[h].enables.remove(inicial+65);
+			//cout<<"\n sizeeee ::  "<<hor[h].enables.size()<<endl;
+			for(auto formi:hor[h].enables)	
+			{
+				vCoste[(formi)-65]=MF[inicial][(formi)-65]* MV[inicial][(formi)-65]; 
+				ruleta += vCoste[(formi)-65];
+				cout<<vCoste[(formi)-65]<<endl;
+	//			i++;
+			}
+			cout<<"\n suma: "<<ruleta<<endl<<"   \n probabilidades: "<<endl;	
+			for(auto formi:hor[h].enables)	
+			{
+				vProb[(formi)-65]=(vCoste[(formi)-65]/ruleta);
+				cout<<vProb[(formi)-65]<<endl;
+			}
+			double r= genRandom(0,1);
+			cout<<"\n Numero aleatorio :"<<r<<endl;
+			double acu=0;
+			for(auto formi:hor[h].enables)
+			{
+				acu+=vProb[(formi)-65];
+				//cout<<"acumnulado: "<<acu<<endl;
+				if(r<=acu)
+				{	
+					inicial=(formi)-65; 
+					break;
+				}
+			}
+            cout<<"El siguiente es ... :"<<inicial<<endl;
+		}	
 	}
-	cout<<"suma: "<<ruleta<<endl<<"probabilidades: "<<endl;
-	for(int i=0;i<columnas;i++)
+}
+
+void calcFitness(vector<hormiga> &F)
+{
+	for(int i=0;i<F.size();i++)
 	{
-		if(i!=ciuIni)
-		{
-			vProb[i]=ruleta/vCoste[i];
-			cout<<vProb[i]<<endl;
-		}
+		double acc=0;
+		for(int j=0;j<F[i].camino.size()-1;j++)
+				acc+=MT[F[i].camino[j]][F[i].camino[j+1]]; 
+		F[i].fitness=acc;
 	}
-	double r= genRandom(0,1);
-	cout<<"Numero aleatorio :"<<r<<endl;
-	double acu=0;
-	for(int i=0;i<vProb.size();i++)
-	{
-		acu+=vProb[i];
-		cout<<"acumnulado: "<<acu<<endl;
-		if(r<=acu)	
-			return i;
-	}
-	return columnas-1;
 }
 
 int main()
 {
+	srand (time(NULL));
 	int cantHormigas=4;
 	vector<hormiga> hormiguero;
 	int alfa=1; int beta=1; int Q=1; int p= 0.99; int maxitera=100;
@@ -163,9 +189,12 @@ int main()
 	printHormiguero("\n Imprimiendo Hormiguero \n",hormiguero);
 	int ciuIni=3;//D
 	//Matriz de feromonas por visibilidad
-	int next=ruleta(ciuIni,columnas);
-	cout<<"siguiente estado: "<< next <<endl;
-
-
+	ruleta(ciuIni,columnas,hormiguero);
+	//printHormiguero("\n Nuevo Hormiguero \n",hormiguero);
+	calcFitness(hormiguero);
+	printHormiguero("\n Nuevo Hormiguero \n",hormiguero);
+		sort(hormiguero.begin(), hormiguero.end(),compare);
+	printHormiguero("\n Nuevo Hormiguero \n",hormiguero);
+	cout<<"\n Mejor Hormiga : ";printHormiga(hormiguero[0]);	
 	return 0;
 }
