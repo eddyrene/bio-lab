@@ -5,6 +5,10 @@
 #include <algorithm>
 #include <list>
 #include <iterator>
+#include <fstream>
+#include <cstdio>
+#include <sstream>
+
 
 using namespace std;
 
@@ -62,18 +66,43 @@ void startHormiguero(vector<hormiga> &a, int cant, int f)
 		a[i].enables.push_back('E');
 	}
 }
+
+void readMat(string name)
+{
+    ifstream file(name);
+    int m=0;
+    string line;
+    while(getline(file,line) )
+    {
+        int n=0;
+        bool flag= false;
+        std::stringstream   linestream(line);
+        std::string         value;
+        //cout<<"entro"<<endl;
+        while(getline(linestream,value,' '))
+        {
+            int v = atoi(value.c_str());
+            MT[m][n]=v;
+            n++;
+        }
+     	m++;
+    }
+        
+}
+
+
 int start(int f , int c, double fi)
 {
 	MT.resize(f);
 	for(int i=0;i<f;i++)
 		MT[i].resize(c);
 
-	MT[0][0]=0; 	MT[0][1]=12;	MT[0][2]=3;		MT[0][3]=23;	MT[0][4]=1;
+	/*MT[0][0]=0; 	MT[0][1]=12;	MT[0][2]=3;		MT[0][3]=23;	MT[0][4]=1;
 	MT[1][0]=12; 	MT[1][1]=0;		MT[1][2]=9;		MT[1][3]=18;	MT[1][4]=3;
 	MT[2][0]=3;		MT[2][1]=9;		MT[2][2]=0;		MT[2][3]=89;	MT[2][4]=56;
 	MT[3][0]=23; 	MT[3][1]=18;	MT[3][2]=89;	MT[3][3]=0;		MT[3][4]=87;
-	MT[4][0]=1; 	MT[4][1]=3;		MT[4][2]=56;	MT[4][3]=87;	MT[4][4]=0;
-
+	MT[4][0]=1; 	MT[4][1]=3;		MT[4][2]=56;	MT[4][3]=87;	MT[4][4]=0;*/
+	readMat("mat.txt");
 	MF.resize(f);
 	for(int i=0;i<f;i++)
 		MF[i].resize(c);
@@ -179,7 +208,7 @@ int main()
 	int cantHormigas=4;
 	vector<hormiga> hormiguero;
 	int alfa=1; int beta=1; int Q=1; int p= 0.99; int maxitera=100;
-	int filas = 5; int columnas = 5; double feromona=0.1;
+	int filas = 10; int columnas = 10; double feromona=0.1;
 	start(filas,columnas,feromona);
 	printMat("\n Matriz de distancia \n \n", MT, filas, columnas);
 	printMat("\n Matriz de feromonas \n \n", MF, filas, columnas);
