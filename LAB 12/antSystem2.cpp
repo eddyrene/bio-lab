@@ -115,8 +115,8 @@ int start(int f , int c, double fi)
 		MF[i].resize(c);
 	
 	for(int i=0;i<f;i++)
-		for(int j=0;j<c;j++) 
-			if(i!=j)
+		for(int j=0;j<c;j++)
+			if(i!=j)	 
 				MF[i][j]=fi;
 
 	MV.resize(f);
@@ -146,7 +146,7 @@ double genRandom(double li, double ls)
 	return li + static_cast <double> (rand()) /( static_cast <double> (RAND_MAX/(ls-li)));
 }
 
-void ruleta(int alfa, int beta, int ciuIni, int columnas, vector<hormiga> &hor)
+void ruleta(int alfa, int t0, double sigma,int ciuIni, int columnas, vector<hormiga> &hor)
 {
 	cout<<"Activaciones"<<endl;
 	for(int h=0; h<hor.size(); h++)
@@ -160,28 +160,21 @@ void ruleta(int alfa, int beta, int ciuIni, int columnas, vector<hormiga> &hor)
 		int inicial =ciuIni;
 		int times=0;
 		while(hor[h].enables.size())
-		{	
+		{	//cout<<"s"<<endl;
 			//cout<<"b"<<endl;
-			//int i=0;
+			int iniTemp=inicial;
 			ruleta=0;
-			vProb.clear(); vCoste.clear();
+			//vProb.clear(); vCoste.clear();
 			hor[h].camino.push_back(inicial);
 			hor[h].enables.remove(inicial+65);
 			//cout<<"\n sizeeee ::  "<<hor[h].enables.size()<<endl;
-			/*for(int i=0;i<columnas;i++)
-			{
-				vCoste[i]=0;	
-			}*/
 			for(auto formi:hor[h].enables)	
 			{
-				vCoste[(formi)-65]=pow(MF[inicial][(formi)-65],alfa)* pow(MV[inicial][(formi)-65],beta); 
+				vCoste[(formi)-65] = ((1-sigma)*MF[inicial][(formi)-65]+(sigma*t0))* MV[inicial][(formi)-65]; 
 				ruleta += vCoste[(formi)-65];
 				//cout<<vCoste[(formi)-65]<<endl;
 	//			i++;
 			}
-			//for(int i=0;i<columnas;i++)
-			//	cout<<vCoste[i]<<endl;
-			//cout<<endl;
 			//cout<<"\n suma: "<<ruleta<<endl<<"   \n probabilidades: "<<endl;	
 			for(auto formi:hor[h].enables)	
 			{
@@ -201,8 +194,150 @@ void ruleta(int alfa, int beta, int ciuIni, int columnas, vector<hormiga> &hor)
 					break;
 				}
 			}
+			//Actualizamos el Arco	
+			MF[iniTemp][inicial]=(1-sigma)*0.1+sigma*0.1;
             //cout<<"El siguiente es ... :"<<inicial<<endl;
+		}
+	}
+}
+void intensification(int alfa, int t0, double sigma,int ciuIni, int columnas, vector<hormiga> &hor)
+{
+	cout<<"Realiza intensification"<<endl;
+	for(int h=0; h<hor.size(); h++)
+	{
+		cout<<"*******HORMIGA: "<<h<<endl;
+		double ruleta=0;
+		vector<double> vProb;
+		vProb.resize(columnas,0);
+		vector<double> vCoste; vCoste.resize(columnas,0);
+		//for(int i=0;i<hor;[h].enables.size();i++)
+		int inicial =ciuIni;
+		int times=0;
+		while(hor[h].enables.size())
+		{	
+			cout<<"b"<<endl;
+			int iniTemp=inicial;
+			//vProb.clear(); vCoste.clear();
+			hor[h].camino.push_back(inicial);
+			hor[h].enables.remove(inicial+65);
+			cout<<"\n sizeeee ::  "<<hor[h].enables.size()<<endl;
+			//for(auto v:vCoste) v=0;
+			for(int i=0;i<columnas;i++)
+			{
+				vCoste[i]=0;	
+				//cout<<vCoste[i]<<endl;
+			}
+			for(auto formi:hor[h].enables)	
+			{
+				vCoste[(formi)-65] = ((1-sigma)*MF[inicial][(formi)-65]+(sigma*t0))* MV[inicial][(formi)-65]; 
+				//cout<<vCoste[(formi)-65]<<endl;
+			}
+			for(int i=0;i<columnas;i++)
+				cout<<vCoste[i]<<endl;
+			int ind =0;
+			for(auto formi:hor[h].enables)
+			{
+				cout<<" "<<vCoste[(formi)-65]<<" "<<vCoste[ind]<<endl;
+				if(vCoste[(formi)-65]>vCoste[ind])
+					ind=(formi)-65;
+			}	
+			//sort(vCoste.begin(),vCoste.end());
+			inicial=ind;
+			//MF[iniTemp][inicial]=(1-sigma)*0.1+sigma*0.1;
+            cout<<"El siguiente es ... :"<<inicial<<endl;
 		}	
+	}
+}
+
+void activacion(double alfa, double beta, double Q, int t0, double sigma,int ciuIni, int columnas, vector<hormiga> &hor)
+{
+	cout<<"Activaciones"<<endl;
+	for(int h=0; h<hor.size(); h++)
+	{
+		cout<<"*******HORMIGA: "<<h<<endl;
+		double ruleta=0;
+		vector<double> vProb;
+		vProb.resize(columnas,0);
+		vector<double> vCoste; vCoste.resize(columnas,0);
+		//for(int i=0;i<hor;[h].enables.size();i++)
+		int inicial =ciuIni;
+		int times=0;
+		while(hor[h].enables.size())
+		{	
+			int iniTemp=inicial;
+			//vProb.clear(); vCoste.clear();
+			hor[h].camino.push_back(inicial);
+			hor[h].enables.remove(inicial+65);
+
+			double Qn= genRandom(0,1);
+			//cout<<"el valor de Qn:  "<<Qn<<endl;
+			//cout<<"el valor de Q"<<Q<<endl;
+			if(Qn<Q)
+			{
+				cout<<"Recorrido por Diversificacion"<<endl;
+				ruleta=0;
+				for(int i=0;i<columnas;i++)
+					vCoste[i]=0;	
+				for(auto formi:hor[h].enables)	
+				{
+					vCoste[(formi)-65] = pow(((1-sigma)*MF[inicial][(formi)-65]+(sigma*t0)),alfa)* pow(MV[inicial][(formi)-65],beta); 
+					ruleta += vCoste[(formi)-65];
+					//cout<<vCoste[(formi)-65]<<endl;
+					//i++;
+				}
+				//for(int i=0;i<columnas;i++)
+				//	cout<<vCoste[i]<<endl;
+				//cout<<endl;
+				//cout<<"\n suma: "<<ruleta<<endl<<"   \n probabilidades: "<<endl;	
+				for(auto formi:hor[h].enables)	
+				{
+					vProb[(formi)-65]=(vCoste[(formi)-65]/ruleta);
+					//cout<<vProb[(formi)-65]<<endl;
+				}
+				double r= genRandom(0,1);
+				//cout<<"\n Numero aleatorio :"<<r<<endl;
+				double acu=0;
+				for(auto formi:hor[h].enables)
+				{
+					acu+=vProb[(formi)-65];
+					//cout<<"acumnulado: "<<acu<<endl;
+					if(r<=acu)
+					{	
+						inicial=(formi)-65; 
+						break;
+					}
+				}
+				//Actualizamos el Arco	
+				
+			}
+			else
+			{
+				cout<<"Recorrido por Intensificacion"<<endl;
+				for(int i=0;i<columnas;i++)
+				{
+					vCoste[i]=0;	
+					//cout<<vCoste[i]<<endl;
+				}
+				for(auto formi:hor[h].enables)	
+				{
+					vCoste[(formi)-65] = pow(((1-sigma)*MF[inicial][(formi)-65]+(sigma*t0)),alfa)* pow(MV[inicial][(formi)-65],beta); 
+					//cout<<vCoste[(formi)-65]<<endl;
+				}
+				/*for(int i=0;i<columnas;i++)
+					cout<<vCoste[i]<<endl;*/
+				int ind =0;
+				for(auto formi:hor[h].enables)
+				{
+					//cout<<" "<<vCoste[(formi)-65]<<" "<<vCoste[ind]<<endl;
+					if(vCoste[(formi)-65]>vCoste[ind])
+						ind=(formi)-65;
+				}	
+				//sort(vCoste.begin(),vCoste.end());
+				inicial=ind;
+			}
+			MF[iniTemp][inicial]=(1-sigma)*0.1+sigma*0.1;
+	        cout<<"Ciudad siguiente :"<<inicial<<endl;
+		}
 	}
 }
 
@@ -221,7 +356,7 @@ double eval(double q, hormiga f, int i,int j)
 	for(int n=0;n<f.camino.size()-1;n++)
 	{
 		//cout<<i<<"###"<<j<<endl;
-		//cout<<"camino"<<n<<" "<<f.camino[n]<<endl;
+		//cout<<"camino"<<f.camino[n]<<"  "<<n<<endl;
 		if((f.camino[n]==i && f.camino[n+1]==j) || (f.camino[n]==j && f.camino[n+1]==i))
 		{
 			//cout<<i<<"***"<<j;
@@ -233,12 +368,12 @@ double eval(double q, hormiga f, int i,int j)
 	return 0;
 		
 }
-void updateFermonasp(double q, double p, int columnas, vector<hormiga> &h)
+void updateFermonasp(double q, double p, int columnas, hormiga &h)
 {
 	cout<<"\n \nActualizando Matriz de fermononas \n"<<endl;
 	for(int i=0;i<columnas;i++)
 	{
-		//cout<<" "<<endl;
+		cout<<" "<<endl;
 		double tmp=0;
 		for(int j=0;j<columnas;j++)
 		{
@@ -247,10 +382,7 @@ void updateFermonasp(double q, double p, int columnas, vector<hormiga> &h)
 				cout<<i<<" "<<j<<" = ";
 				tmp=p*MF[i][j];
 				cout<<tmp<<"";
-				for(int k=0;k<h.size();k++)
-				{
-					tmp+=eval(q,h[k],i,j);
-				}
+				tmp+=(1-p)*eval(q,h,i,j);
 				MF[i][j]=tmp;		
 				cout<<endl;
 			}
@@ -263,10 +395,10 @@ int main()
 	srand (time(NULL));
 	int cantHormigas=4;
 	vector<hormiga> hormiguero;
-	int alfa=1; int beta=1; double Q=1; double p= 0.99; int maxitera=100;
+	int alfa=1; int beta=1; double Q=0.7 ;double p= 0.99; int maxitera=100; double sigma = 0.05;
 	cout<<"alfa "<<alfa<<endl;
 	cout<<"beta "<<beta<<endl;
-	cout<<"Q "<<Q<<endl;
+	cout<<"Q0 "<<Q<<endl;
 	cout<<"p "<<p<<endl;
 	int filas = 10; int columnas = 10; double feromona=0.1;
 	start(filas,columnas,feromona);
@@ -283,16 +415,15 @@ int main()
 		startHormiguero(hormiguero,cantHormigas, filas);
 		printHormiguero("\n  Hormiguero  inicial\n",hormiguero);
 		int ciuIni=3;//D
-		//Matriz de feromonas por visibilidad
-		ruleta(alfa, beta, ciuIni,columnas,hormiguero);
+		//(int alfa, int t0, double sigma,int ciuIni, int columnas, vector<hormiga> &hor)
 		//printHormiguero("\n Nuevo Hormiguero \n",hormiguero);
+		activacion(alfa,beta,Q,feromona,sigma,ciuIni,columnas,hormiguero);
 		calcFitness(hormiguero);
 		//printHormiguero("\n Nuevo Hormiguero \n",hormiguero);
 			sort(hormiguero.begin(), hormiguero.end(),compare);
 		printHormiguero("\n Nuevo Hormiguero \n",hormiguero);
 		cout<<"\n Mejor Hormiga :\n";printHormiga(hormiguero[0]);	
-		updateFermonasp(Q,p,columnas,hormiguero);
-		//printHormiguero("\n Hormiguero A Evaluar \n",hormiguero);
+		updateFermonasp	(Q,p,columnas,hormiguero[0]);
 		//printMat(" \n Nueva Matriz de feromonas\n \n",MF, filas, columnas);
 		times++;
 	}
