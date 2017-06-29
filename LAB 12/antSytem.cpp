@@ -277,7 +277,7 @@ int main()
 	//startHormiguero(hormiguero,cantHormigas, filas);
 	//printHormiguero("\n Imprimiendo Hormiguero \n",hormiguero);
 	int times=0;
-	while(times<100)
+	while(times<200)
 	{
 		cout<<"***************** Iteracion"<<times<<"<<<<<<<<<<<<<"<<endl;
 		startHormiguero(hormiguero,cantHormigas, filas);

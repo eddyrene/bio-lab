@@ -280,7 +280,7 @@ void activacion(double alfa, double beta, double Q, int t0, double sigma,int ciu
 					vCoste[i]=0;	
 				for(auto formi:hor[h].enables)	
 				{
-					vCoste[(formi)-65] = pow(((1-sigma)*MF[inicial][(formi)-65]+(sigma*t0)),alfa)* pow(MV[inicial][(formi)-65],beta); 
+					vCoste[(formi)-65] = pow(MF[inicial][(formi)-65],alfa)* pow(MV[inicial][(formi)-65],beta); 
 					ruleta += vCoste[(formi)-65];
 					//cout<<vCoste[(formi)-65]<<endl;
 					//i++;
@@ -320,7 +320,8 @@ void activacion(double alfa, double beta, double Q, int t0, double sigma,int ciu
 				}
 				for(auto formi:hor[h].enables)	
 				{
-					vCoste[(formi)-65] = pow(((1-sigma)*MF[inicial][(formi)-65]+(sigma*t0)),alfa)* pow(MV[inicial][(formi)-65],beta); 
+					//vCoste[(formi)-65] = pow(((1-sigma)*MF[inicial][(formi)-65]+(sigma*t0)),alfa)* pow(MV[inicial][(formi)-65],beta); 
+					vCoste[(formi)-65] = (MF[inicial][(formi)-65])* pow(MV[inicial][(formi)-65],beta); 
 					//cout<<vCoste[(formi)-65]<<endl;
 				}
 				/*for(int i=0;i<columnas;i++)
@@ -335,7 +336,12 @@ void activacion(double alfa, double beta, double Q, int t0, double sigma,int ciu
 				//sort(vCoste.begin(),vCoste.end());
 				inicial=ind;
 			}
-			MF[iniTemp][inicial]=(1-sigma)*0.1+sigma*0.1;
+			//MF[iniTemp][inicial]=
+			double valor=(1-sigma)*MF[iniTemp][inicial]+(sigma*t0);
+			MF[iniTemp][inicial]=valor;
+			MF[inicial][iniTemp]=valor;
+
+			//(1-sigma)*0.1+sigma*0.1;
 	        cout<<"Ciudad siguiente :"<<inicial<<endl;
 		}
 	}

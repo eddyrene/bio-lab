@@ -101,7 +101,6 @@ void Run(bandada &B,int f1, int f2)
 
 		findBestVersion(B[i]);
 	}
-
 }
 int main()
 {
