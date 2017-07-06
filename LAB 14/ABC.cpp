@@ -109,6 +109,7 @@ void genCandidatas(Soluciones & A,Soluciones & cand,int CS, int D, int SN)
 		if(k!=i)
 		{
 			Sol n;
+			n.val[(j+1)%2]=A[i].val[(j+1)%2];
 			n.val[j]=A[i].val[j]+ fi * (A[i].val[j]-A[k].val[j]);
 			n.fEval=0;
 			n.fit=0;
@@ -121,7 +122,7 @@ void genCandidatas(Soluciones & A,Soluciones & cand,int CS, int D, int SN)
 void genNuevaObs(Soluciones & A, int pos,int D, int SN)
 {
 	// vi,j = xi,j + ɸ · (xi,j − xk,j),
-	cout<<"pos elegida  "<<pos<<endl;
+	cout<<" \n ---->  pos elegida ------> "<<pos<<endl;
 	double fi=genRandom(-1,1);
 	int j = round(genRandom(0,D-1));
 	int k = round(genRandom(0,SN-1));
@@ -130,12 +131,13 @@ void genNuevaObs(Soluciones & A, int pos,int D, int SN)
 	if(k!=pos)
 	{
 		Sol n;
+		n.val[(j+1)%2]=A[pos].val[(j+1)%2];
 		n.val[j]=A[pos].val[j]+ fi * (A[pos].val[j]-A[k].val[j]);
 		n.fEval=0;
 		n.fit=0;
 		n.cont=0;
 		calcfEvalSol(n);calcFit(n);
-		printSol("\nimprimiendo primera opcion \n\n",n);
+		
 		if(A[pos].fit> n.fit)
 		{
 			n.cont++; 
@@ -146,6 +148,7 @@ void genNuevaObs(Soluciones & A, int pos,int D, int SN)
 			n.cont=0; A[pos].cont=0;	
 			A[pos]=n;
 		}
+		printSol("\nimprimiendo primera opcion \n\n",n);
 		printSoluciones("\nNuevos Mejores \n\n", A);
 	}
 }
@@ -168,7 +171,8 @@ Soluciones bestSols(Soluciones &A , Soluciones &cand)
 		if(cand[i].fit < A[i].fit)
 		{
 			//cand[i].cont++;
-			A[i].cont=cand[i].cont;
+			A[i].cont++;
+			//cand[i].cont;
 			B.push_back(A[i]);
 		}
 		else
@@ -205,6 +209,25 @@ Sol CalcBest(Soluciones & A)
 	sort(A.begin(), A.end(),compare);
 	return A[0];
 }
+
+void excedLimt(Soluciones & A, int L )
+{
+	for(auto &y: A)
+	{
+		if(y.cont > L)
+		{
+			for(int j=0;j<2;j++)
+			{
+				y.val[j]= min(y.val[0],y.val[1])+ genRandom(0,1)*(max(y.val[0],y.val[1])-min(y.val[0],y.val[1]));
+			}
+			y.fEval=0;
+			y.fit=0;
+			y.cont=0;
+			calcfEvalSol(y);calcFit(y);
+		}
+
+	}
+}
 int main()
 {
 	srand (time(NULL));
@@ -227,28 +250,33 @@ int main()
 	{
 		cout<<"############# Iteracion"<<ite<<"################"<<endl;
 		cand.clear();
-		best.clear();
+		//best.clear();
+		//cand=best;
+		printSoluciones("\n Calculando Iniciales fEval y fitness \n\n", A);
 		genCandidatas(A,cand,CS,D,SN);
 		//printSoluciones("\n Soluciones Candidatas \n\n", cand);
 		calcfEvalSoluciones(cand);
 		calcFitSoluciones(cand);
 		compSoluciones(A,cand);
 		printSoluciones("\n Calculando Candidatas fEval y fitness \n\n", cand);
-		best=bestSols(A,cand);
-		printSoluciones("\n Mejores Soluciones \n\n", best);	
+		A=bestSols(A,cand);
+		printSoluciones("\n Mejores Soluciones \n\n", A);	
 		int obs=0;
 		while(obs<SN)
 		{
-			cout<<"############# Observadora "<<obs<<"################"<<endl;
-			probSeleccion(best);
-			printSolucionesProb("\n Mejores Soluciones con Probabilidad \n\n", best);
-			double solEle= probSeleccion(best);
-			genNuevaObs(best,solEle,D,SN);
+			cout<<"\n * * * * * * * * *  Observadora "<<obs<<"* * * * * * * * *"<<endl;
+			probSeleccion(A);
+			printSolucionesProb("\n Mejores Soluciones con Probabilidad \n\n", A);
+			double solEle= probSeleccion(A);
+			genNuevaObs(A,solEle,D,SN);
 			obs++;
 		}
-		sort(best.begin(),best.end(),compare);
-		if(nn.fit< best[0].fit)
-			nn= best[0];
+		
+		excedLimt(A,L);
+		printSolucionesProb("\n Ciclo Terminado , Comprobando si se acabo recursos \n \n ", A);
+		sort(A.begin(),A.end(),compare);
+		if(nn.fit< A[0].fit)
+			nn= A[0];
 		printSol("\nEl mejor acumulado\n", nn);
 		ite++;		
 	}
